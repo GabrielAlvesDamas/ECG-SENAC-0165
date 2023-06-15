@@ -10,16 +10,68 @@ namespace DesktopECG.UCs
         private Panel painelSelecionado;
         private bool _isDragging;
         private Panel _pointPanel;
-        private IList<EletrodoPoint> _elPoints = new List<EletrodoPoint>();
+        private IList<EletrodoPoint> ListaPontosDropEletrodo;
+        private IList<Point> ListaPosicoesIniciais;
+
         public UcAlphaGame()
         {
             InitializeComponent();
             painelSelecionado = null;
-            foreach(Control control in Controls)
+
+            ListaPontosDropEletrodo = new List<EletrodoPoint>() {
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point1.Location.X + point1.Size.Width,
+                    PosicaoMinimaX = point1.Location.X,
+                    PosicaoMaximaY = point1.Location.Y + point1.Size.Height,
+                    PosicaoMinimaY = point1.Location.Y,
+                    Tag = point1.Tag.ToString()
+                },
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point2.Location.X + point2.Size.Width,
+                    PosicaoMinimaX = point2.Location.X,
+                    PosicaoMaximaY = point2.Location.Y + point2.Size.Height,
+                    PosicaoMinimaY = point2.Location.Y,
+                    Tag = point2.Tag.ToString()
+                },
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point3.Location.X + point3.Size.Width,
+                    PosicaoMinimaX = point3.Location.X,
+                    PosicaoMaximaY = point3.Location.Y + point3.Size.Height,
+                    PosicaoMinimaY = point3.Location.Y,
+                    Tag = point3.Tag.ToString()
+                },
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point4.Location.X + point4.Size.Width,
+                    PosicaoMinimaX = point4.Location.X,
+                    PosicaoMaximaY = point4.Location.Y + point4.Size.Height,
+                    PosicaoMinimaY = point4.Location.Y,
+                    Tag = point4.Tag.ToString()
+                },
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point5.Location.X + point5.Size.Width,
+                    PosicaoMinimaX = point5.Location.X,
+                    PosicaoMaximaY = point5.Location.Y + point5.Size.Height,
+                    PosicaoMinimaY = point5.Location.Y,
+                    Tag = point5.Tag.ToString()
+                },
+                new EletrodoPoint(){
+                    PosicaoMaximaX = point6.Location.X + point6.Size.Width,
+                    PosicaoMinimaX = point6.Location.X,
+                    PosicaoMaximaY = point6.Location.Y + point6.Size.Height,
+                    PosicaoMinimaY = point6.Location.Y,
+                    Tag = point6.Tag.ToString()
+                },
+            };
+
+            ListaPosicoesIniciais = new List<Point>()
             {
-                if (control is PictureBox)
-                    _elPoints.Add(new EletrodoPoint{ Tag = control.Tag.ToString(), Point = control.Location });
-            }
+                eletrodo1.Location,
+                eletrodo2.Location,
+                eletrodo3.Location,
+                eletrodo4.Location,
+                eletrodo5.Location,
+                eletrodo6.Location,
+            };
         }
 
         private void eletrodo_MouseDown(object sender, MouseEventArgs e)
@@ -42,53 +94,19 @@ namespace DesktopECG.UCs
 
         private void eletrodo_MouseUp(object sender, MouseEventArgs e)
         {
-            if (painelSelecionado != null)
+            PictureBox? pic = (sender as PictureBox);
+            if (pic != null)
             {
-
-                PictureBox pic = (sender as PictureBox);
-
-                foreach (var point in _elPoints)
-                {
-                    if (point.Tag == pic.Tag)
-                        _startPoint = point.Point;
-                }
-
-                var rangeX = painelSelecionado.Location.X + painelSelecionado.Size.Width;
-                var rangeY = painelSelecionado.Location.Y + painelSelecionado.Size.Height;
-
-                int mouseX = MousePosition.X;
-                int mouseY = MousePosition.Y;
-
-                if (painelSelecionado.Tag != pic.Tag
-                    && !(mouseX < rangeX
-                    && mouseX > painelSelecionado.Location.X)
-                    || !(mouseY < rangeY
-                    && mouseY > painelSelecionado.Location.Y)
-                )
-                    pic.Location = _startPoint;
+                EletrodoPoint? Eletrodo = ListaPontosDropEletrodo.Where(x => x.PosicaoMinimaX < pic.Location.X && x.PosicaoMaximaX > pic.Location.X &&
+                                                                             x.PosicaoMinimaY < pic.Location.Y && x.PosicaoMaximaY > pic.Location.Y &&
+                                                                             x.Tag == pic.Tag).FirstOrDefault();
+                if (Eletrodo != null)
+                    pic.Location = new Point() {X = Eletrodo.PosicaoMinimaX.Value + 10 , Y = Eletrodo.PosicaoMinimaY.Value + 10} ;
 
                 else
-                    pic.Location = _startPoint;
+                    pic.Location = ListaPosicoesIniciais[Convert.ToInt32(pic.Tag) - 1];
             }
-        }
-
-        private void point_MouseLeave(object sender, EventArgs e) 
-        { 
-        }
-
-        private void point6_MouseUp(object sender, MouseEventArgs e)
-        {
-            painelSelecionado = sender as Panel;
-        }
-
-        private void point_DragDrop(object sender, DragEventArgs e)
-        {
-            painelSelecionado = sender as Panel;
-        }
-        
-        private void point_DragLeave(object sender, DragEventArgs e)
-        {
-            painelSelecionado = null;
+                
         }
     }
 }

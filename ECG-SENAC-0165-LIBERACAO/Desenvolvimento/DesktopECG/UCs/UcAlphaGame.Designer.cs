@@ -65,8 +65,6 @@
             this.point6.Size = new System.Drawing.Size(62, 74);
             this.point6.TabIndex = 0;
             this.point6.Tag = "6";
-            this.point6.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
-            this.point6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.point6_MouseUp);
             // 
             // point5
             // 
@@ -76,7 +74,6 @@
             this.point5.Size = new System.Drawing.Size(62, 74);
             this.point5.TabIndex = 1;
             this.point5.Tag = "5";
-            this.point5.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
             // 
             // point4
             // 
@@ -86,7 +83,6 @@
             this.point4.Size = new System.Drawing.Size(62, 74);
             this.point4.TabIndex = 2;
             this.point4.Tag = "4";
-            this.point4.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
             // 
             // point2
             // 
@@ -96,7 +92,6 @@
             this.point2.Size = new System.Drawing.Size(62, 74);
             this.point2.TabIndex = 3;
             this.point2.Tag = "2";
-            this.point2.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
             // 
             // point1
             // 
@@ -106,7 +101,6 @@
             this.point1.Size = new System.Drawing.Size(62, 74);
             this.point1.TabIndex = 4;
             this.point1.Tag = "1";
-            this.point1.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
             // 
             // point3
             // 
@@ -116,7 +110,6 @@
             this.point3.Size = new System.Drawing.Size(62, 74);
             this.point3.TabIndex = 5;
             this.point3.Tag = "3";
-            this.point3.DragDrop += new System.Windows.Forms.DragEventHandler(this.point_DragDrop);
             // 
             // label1
             // 

@@ -53,3 +53,22 @@ C:\Users\860966\Desktop\FRONT PROJETO JOHN\ProjetoIntegrador\00 - Programa\Deskt
 C:\Users\860966\Desktop\FRONT PROJETO JOHN\ProjetoIntegrador\00 - Programa\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.genruntimeconfig.cache
 C:\Users\860966\Desktop\FRONT PROJETO JOHN\ProjetoIntegrador\00 - Programa\DesktopECG\obj\Debug\net6.0-windows\ref\DesktopECG.dll
 C:\Users\860966\Desktop\FRONT PROJETO JOHN\ProjetoIntegrador\00 - Programa\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.UCs.UcAlphaGame.resources
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\bin\Debug\net6.0-windows\DesktopECG.exe
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\bin\Debug\net6.0-windows\DesktopECG.deps.json
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\bin\Debug\net6.0-windows\DesktopECG.runtimeconfig.json
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\bin\Debug\net6.0-windows\DesktopECG.dll
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\bin\Debug\net6.0-windows\DesktopECG.pdb
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.csproj.AssemblyReference.cache
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.FrmPrincipal.resources
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.Properties.Resources.resources
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.UCs.UcAlphaGame.resources
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.csproj.GenerateResource.cache
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.AssemblyInfoInputs.cache
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.AssemblyInfo.cs
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.csproj.CoreCompileInputs.cache
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.dll
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\refint\DesktopECG.dll
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.pdb
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.genruntimeconfig.cache
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\ref\DesktopECG.dll
