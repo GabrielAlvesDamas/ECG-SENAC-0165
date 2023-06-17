@@ -49,6 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.buttonVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo3)).BeginInit();
@@ -115,7 +116,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(779, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 21);
             this.label1.TabIndex = 6;
@@ -125,7 +126,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(67, 19);
+            this.label2.Location = new System.Drawing.Point(834, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 7;
@@ -275,10 +276,27 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "4";
             // 
+            // buttonVoltar
+            // 
+            this.buttonVoltar.BackColor = System.Drawing.Color.Transparent;
+            this.buttonVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonVoltar.FlatAppearance.BorderSize = 0;
+            this.buttonVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVoltar.Image = global::DesktopECG.Properties.Resources.icons8_voltar_16__1_;
+            this.buttonVoltar.Location = new System.Drawing.Point(9, 8);
+            this.buttonVoltar.Name = "buttonVoltar";
+            this.buttonVoltar.Size = new System.Drawing.Size(21, 23);
+            this.buttonVoltar.TabIndex = 19;
+            this.buttonVoltar.UseVisualStyleBackColor = false;
+            this.buttonVoltar.Click += new System.EventHandler(this.buttonVoltar_Click);
+            this.buttonVoltar.MouseEnter += new System.EventHandler(this.Enter_Animation);
+            this.buttonVoltar.MouseLeave += new System.EventHandler(this.Leave_Animation);
+            // 
             // UcAlphaGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonVoltar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -300,7 +318,7 @@
             this.Controls.Add(this.point5);
             this.Controls.Add(this.point6);
             this.Name = "UcAlphaGame";
-            this.Size = new System.Drawing.Size(895, 449);
+            this.Size = new System.Drawing.Size(899, 492);
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eletrodo3)).EndInit();
@@ -334,5 +352,6 @@
         private Label label6;
         private Label label7;
         private Label label8;
+        private Button buttonVoltar;
     }
 }

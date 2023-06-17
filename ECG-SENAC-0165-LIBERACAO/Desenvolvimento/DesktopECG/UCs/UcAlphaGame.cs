@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using DesktopECG.Effects;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace DesktopECG.UCs
 {
@@ -7,17 +9,18 @@ namespace DesktopECG.UCs
         private Point _mousePointEletrodo;
         private Point _startPoint;
         private bool _enterPoint;
-        private Panel painelSelecionado;
+        private Panel _panel;
+        private Form _form;
         private bool _isDragging;
         private Panel _pointPanel;
         private IList<EletrodoPoint> ListaPontosDropEletrodo;
         private IList<Point> ListaPosicoesIniciais;
 
-        public UcAlphaGame()
+        public UcAlphaGame(Panel panel, Form form)
         {
             InitializeComponent();
-            painelSelecionado = null;
-
+            _panel = panel;
+            _form = form;
             ListaPontosDropEletrodo = new List<EletrodoPoint>() {
                 new EletrodoPoint(){
                     PosicaoMaximaX = point1.Location.X + point1.Size.Width,
@@ -107,6 +110,27 @@ namespace DesktopECG.UCs
                     pic.Location = ListaPosicoesIniciais[Convert.ToInt32(pic.Tag) - 1];
             }
                 
+        }
+
+        private void Enter_Animation(object sender, EventArgs e)
+        {
+            ControlAnimation.Enter(sender, e);
+        }
+        private void Leave_Animation(object sender, EventArgs e)
+        {
+            ControlAnimation.Leave(sender, e);
+        }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente sair do jogo?\nTodo o progresso será perdido!", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                _panel.Controls.Clear();
+                _panel.Controls.Add(new UcAlphaGameInitialScreen(_panel, _form));
+            }
+                
+            return;
+            
         }
     }
 }

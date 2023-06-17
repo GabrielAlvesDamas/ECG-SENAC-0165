@@ -48,10 +48,10 @@ namespace DesktopECG
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            UcAlphaGame ucAlphaGame = new UcAlphaGame();
+            UcAlphaGameInitialScreen ucAlphaGameInitialScreen = new UcAlphaGameInitialScreen(panelUc,this);
 
-            Controls.Add(ucAlphaGame);
-            ucAlphaGame.Dock = DockStyle.Fill;
+            panelUc.Controls.Add(ucAlphaGameInitialScreen);
+            ucAlphaGameInitialScreen.Dock = DockStyle.Fill;
         }
     }
 }
