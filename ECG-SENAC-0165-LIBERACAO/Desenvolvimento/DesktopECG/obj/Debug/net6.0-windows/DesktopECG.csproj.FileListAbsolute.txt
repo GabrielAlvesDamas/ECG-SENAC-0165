@@ -92,3 +92,4 @@ C:\Users\860966\Desktop\ECG-SENAC-0165\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\D
 C:\Users\860966\Desktop\ECG-SENAC-0165\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.pdb
 C:\Users\860966\Desktop\ECG-SENAC-0165\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.genruntimeconfig.cache
 C:\Users\860966\Desktop\ECG-SENAC-0165\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\ref\DesktopECG.dll
+C:\Users\804560\Desktop\ECG-SENAC-0165\ECG-SENAC-0165-LIBERACAO\Desenvolvimento\DesktopECG\obj\Debug\net6.0-windows\DesktopECG.UCs.UcAlphaGameInitialScreen.resources

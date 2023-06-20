@@ -28,83 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.WindowBorder = new System.Windows.Forms.Panel();
-            this.buttonMinimizeWindow = new System.Windows.Forms.Button();
-            this.buttonCloseWindow = new System.Windows.Forms.Button();
-            this.panelUc = new System.Windows.Forms.Panel();
-            this.WindowBorder.SuspendLayout();
-            this.SuspendLayout();
+            WindowBorder = new Panel();
+            buttonMinimizeWindow = new Button();
+            buttonCloseWindow = new Button();
+            panelUc = new Panel();
+            WindowBorder.SuspendLayout();
+            SuspendLayout();
             // 
             // WindowBorder
             // 
-            this.WindowBorder.BackColor = System.Drawing.Color.SteelBlue;
-            this.WindowBorder.Controls.Add(this.buttonMinimizeWindow);
-            this.WindowBorder.Controls.Add(this.buttonCloseWindow);
-            this.WindowBorder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.WindowBorder.Location = new System.Drawing.Point(0, 0);
-            this.WindowBorder.Name = "WindowBorder";
-            this.WindowBorder.Size = new System.Drawing.Size(899, 21);
-            this.WindowBorder.TabIndex = 0;
-            this.WindowBorder.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindowBorder_MouseDown);
-            this.WindowBorder.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindowBorder_MouseMove);
+            WindowBorder.BackColor = Color.SteelBlue;
+            WindowBorder.Controls.Add(buttonMinimizeWindow);
+            WindowBorder.Controls.Add(buttonCloseWindow);
+            WindowBorder.Dock = DockStyle.Top;
+            WindowBorder.Location = new Point(0, 0);
+            WindowBorder.Name = "WindowBorder";
+            WindowBorder.Size = new Size(1264, 21);
+            WindowBorder.TabIndex = 0;
+            WindowBorder.MouseDown += WindowBorder_MouseDown;
+            WindowBorder.MouseMove += WindowBorder_MouseMove;
             // 
             // buttonMinimizeWindow
             // 
-            this.buttonMinimizeWindow.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMinimizeWindow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonMinimizeWindow.FlatAppearance.BorderSize = 0;
-            this.buttonMinimizeWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMinimizeWindow.Font = new System.Drawing.Font("Fun City Level 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonMinimizeWindow.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonMinimizeWindow.Location = new System.Drawing.Point(825, 0);
-            this.buttonMinimizeWindow.Name = "buttonMinimizeWindow";
-            this.buttonMinimizeWindow.Size = new System.Drawing.Size(37, 21);
-            this.buttonMinimizeWindow.TabIndex = 2;
-            this.buttonMinimizeWindow.Text = "-";
-            this.buttonMinimizeWindow.UseMnemonic = false;
-            this.buttonMinimizeWindow.UseVisualStyleBackColor = false;
-            this.buttonMinimizeWindow.Click += new System.EventHandler(this.buttonMinimizeWindow_Click);
+            buttonMinimizeWindow.BackColor = Color.Transparent;
+            buttonMinimizeWindow.Cursor = Cursors.Hand;
+            buttonMinimizeWindow.FlatAppearance.BorderSize = 0;
+            buttonMinimizeWindow.FlatStyle = FlatStyle.Flat;
+            buttonMinimizeWindow.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonMinimizeWindow.ForeColor = Color.Transparent;
+            buttonMinimizeWindow.Location = new Point(1189, 0);
+            buttonMinimizeWindow.Name = "buttonMinimizeWindow";
+            buttonMinimizeWindow.Size = new Size(37, 21);
+            buttonMinimizeWindow.TabIndex = 2;
+            buttonMinimizeWindow.Text = "-";
+            buttonMinimizeWindow.UseMnemonic = false;
+            buttonMinimizeWindow.UseVisualStyleBackColor = false;
+            buttonMinimizeWindow.Click += buttonMinimizeWindow_Click;
             // 
             // buttonCloseWindow
             // 
-            this.buttonCloseWindow.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCloseWindow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCloseWindow.FlatAppearance.BorderSize = 0;
-            this.buttonCloseWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCloseWindow.Font = new System.Drawing.Font("Fun City Level 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCloseWindow.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCloseWindow.Location = new System.Drawing.Point(862, 0);
-            this.buttonCloseWindow.Name = "buttonCloseWindow";
-            this.buttonCloseWindow.Size = new System.Drawing.Size(37, 21);
-            this.buttonCloseWindow.TabIndex = 1;
-            this.buttonCloseWindow.Text = "X";
-            this.buttonCloseWindow.UseMnemonic = false;
-            this.buttonCloseWindow.UseVisualStyleBackColor = false;
-            this.buttonCloseWindow.Click += new System.EventHandler(this.buttonCloseWindow_Click);
+            buttonCloseWindow.BackColor = Color.Transparent;
+            buttonCloseWindow.Cursor = Cursors.Hand;
+            buttonCloseWindow.FlatAppearance.BorderSize = 0;
+            buttonCloseWindow.FlatStyle = FlatStyle.Flat;
+            buttonCloseWindow.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCloseWindow.ForeColor = Color.Transparent;
+            buttonCloseWindow.Location = new Point(1226, 0);
+            buttonCloseWindow.Name = "buttonCloseWindow";
+            buttonCloseWindow.Size = new Size(37, 21);
+            buttonCloseWindow.TabIndex = 1;
+            buttonCloseWindow.Text = "X";
+            buttonCloseWindow.UseMnemonic = false;
+            buttonCloseWindow.UseVisualStyleBackColor = false;
+            buttonCloseWindow.Click += buttonCloseWindow_Click;
             // 
             // panelUc
             // 
-            this.panelUc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUc.Location = new System.Drawing.Point(0, 21);
-            this.panelUc.Name = "panelUc";
-            this.panelUc.Size = new System.Drawing.Size(899, 471);
-            this.panelUc.TabIndex = 1;
+            panelUc.Dock = DockStyle.Fill;
+            panelUc.Location = new Point(0, 21);
+            panelUc.Name = "panelUc";
+            panelUc.Size = new Size(1264, 528);
+            panelUc.TabIndex = 1;
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(899, 492);
-            this.Controls.Add(this.panelUc);
-            this.Controls.Add(this.WindowBorder);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmPrincipal";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
-            this.WindowBorder.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(1264, 549);
+            Controls.Add(panelUc);
+            Controls.Add(WindowBorder);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FrmPrincipal";
+            Text = "Form1";
+            Load += FrmPrincipal_Load;
+            WindowBorder.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

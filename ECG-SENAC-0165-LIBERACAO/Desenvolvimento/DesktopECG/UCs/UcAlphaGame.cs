@@ -15,12 +15,15 @@ namespace DesktopECG.UCs
         private Panel _pointPanel;
         private IList<EletrodoPoint> ListaPontosDropEletrodo;
         private IList<Point> ListaPosicoesIniciais;
+        private int pontuacao;
 
         public UcAlphaGame(Panel panel, Form form)
         {
             InitializeComponent();
             _panel = panel;
             _form = form;
+            pontuacao = 0;
+            label2.Text = pontuacao.ToString();
             ListaPontosDropEletrodo = new List<EletrodoPoint>() {
                 new EletrodoPoint(){
                     PosicaoMaximaX = point1.Location.X + point1.Size.Width,
@@ -104,12 +107,21 @@ namespace DesktopECG.UCs
                                                                              x.PosicaoMinimaY < pic.Location.Y && x.PosicaoMaximaY > pic.Location.Y &&
                                                                              x.Tag == pic.Tag).FirstOrDefault();
                 if (Eletrodo != null)
-                    pic.Location = new Point() {X = Eletrodo.PosicaoMinimaX.Value + 10 , Y = Eletrodo.PosicaoMinimaY.Value + 10} ;
-
+                {
+                    pic.Location = new Point() { X = Eletrodo.PosicaoMinimaX.Value + 10, Y = Eletrodo.PosicaoMinimaY.Value + 10 };
+                    if (pontuacao <= 600)
+                        pontuacao += 100;
+                    label2.Text = pontuacao.ToString();
+                }
                 else
+                {
                     pic.Location = ListaPosicoesIniciais[Convert.ToInt32(pic.Tag) - 1];
+                    if (pontuacao >= 100)
+                        pontuacao -= 100;
+                    label2.Text = pontuacao.ToString();
+                }
             }
-                
+
         }
 
         private void Enter_Animation(object sender, EventArgs e)
@@ -128,9 +140,9 @@ namespace DesktopECG.UCs
                 _panel.Controls.Clear();
                 _panel.Controls.Add(new UcAlphaGameInitialScreen(_panel, _form));
             }
-                
+
             return;
-            
+
         }
     }
 }

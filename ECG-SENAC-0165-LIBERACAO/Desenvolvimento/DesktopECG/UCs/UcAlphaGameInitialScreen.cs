@@ -6,7 +6,7 @@ namespace DesktopECG.UCs
     {
         private Panel _panel;
         private Form _form;
-        public UcAlphaGameInitialScreen(Panel panel,Form form)
+        public UcAlphaGameInitialScreen(Panel panel, Form form)
         {
             InitializeComponent();
             _panel = panel;
@@ -15,7 +15,7 @@ namespace DesktopECG.UCs
 
         private void Enter_Animation(object sender, EventArgs e)
         {
-            ControlAnimation.Enter(sender,e);
+            ControlAnimation.Enter(sender, e);
         }
 
         private void Leave_Animation(object sender, EventArgs e)
@@ -25,7 +25,7 @@ namespace DesktopECG.UCs
 
         private void labelPlay_Click(object sender, EventArgs e)
         {
-            UcAlphaGame ucAlphaGame = new UcAlphaGame(_panel,_form);
+            UcAlphaGame ucAlphaGame = new UcAlphaGame(_panel, _form);
 
             _panel.Controls.Clear();
             _panel.Controls.Add(ucAlphaGame);

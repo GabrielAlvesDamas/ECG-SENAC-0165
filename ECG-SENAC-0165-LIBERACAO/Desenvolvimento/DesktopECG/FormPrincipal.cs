@@ -48,7 +48,7 @@ namespace DesktopECG
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            UcAlphaGameInitialScreen ucAlphaGameInitialScreen = new UcAlphaGameInitialScreen(panelUc,this);
+            UcAlphaGameInitialScreen ucAlphaGameInitialScreen = new UcAlphaGameInitialScreen(panelUc, this);
 
             panelUc.Controls.Add(ucAlphaGameInitialScreen);
             ucAlphaGameInitialScreen.Dock = DockStyle.Fill;
