@@ -63,6 +63,16 @@ namespace DesktopECG.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_img {
+            get {
+                object obj = ResourceManager.GetObject("back-img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Botão_vermelho {
             get {
                 object obj = ResourceManager.GetObject("Botão vermelho", resourceCulture);
@@ -116,6 +126,16 @@ namespace DesktopECG.Properties {
         internal static System.Drawing.Bitmap Tela_1 {
             get {
                 object obj = ResourceManager.GetObject("Tela 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tela_do_Jogo___01 {
+            get {
+                object obj = ResourceManager.GetObject("Tela do Jogo - 01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

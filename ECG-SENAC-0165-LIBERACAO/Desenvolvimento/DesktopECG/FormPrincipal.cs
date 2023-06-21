@@ -1,4 +1,5 @@
 using DesktopECG.UCs;
+using System.Security.Principal;
 
 namespace DesktopECG
 {
@@ -6,13 +7,23 @@ namespace DesktopECG
     {
         private Point _mousePointWindow;
 
+        private static FrmPrincipal _instance;
+        public static FrmPrincipal Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new FrmPrincipal();
+                return _instance;
+            }
+        }
 
         public FrmPrincipal()
         {
             InitializeComponent();
-
-            PlayLoopMusic();
         }
+
+        // Movimentação de janela via borda personalizada // 
         private void WindowBorder_MouseDown(object sender, MouseEventArgs e)
         {
             _mousePointWindow = new Point(-e.X, -e.Y);
@@ -28,10 +39,12 @@ namespace DesktopECG
             }
         }
 
+
+        // Ação de borda personalizada //
         private void buttonCloseWindow_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair do jogo?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                this.Close();
+                this.CloseScreen();
             return;
         }
 
@@ -40,18 +53,27 @@ namespace DesktopECG
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private async Task PlayLoopMusic()
+
+        // Load de Telas Subsequentes //
+
+        public void LoadScreen(UserControl uC)
         {
-            //SoundPlayer simpleSound = new SoundPlayer(@"C:\Users\jande\Downloads\PrincipalMusicInicialGame.wav");
-            //simpleSound.PlayLooping();
+            UserControl uCScreen = uC;
+
+            panelUc.Controls.Clear();
+            panelUc.Controls.Add(uCScreen);
+            uCScreen.Dock = DockStyle.Fill;
+        }
+
+        public void CloseScreen()
+        {
+            Close();
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            UcAlphaGameInitialScreen ucAlphaGameInitialScreen = new UcAlphaGameInitialScreen(panelUc, this);
-
-            panelUc.Controls.Add(ucAlphaGameInitialScreen);
-            ucAlphaGameInitialScreen.Dock = DockStyle.Fill;
+            LoadScreen(new UcAlphaGameInitialScreen());
         }
+
     }
 }

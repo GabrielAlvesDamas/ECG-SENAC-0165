@@ -1,73 +1,38 @@
 ﻿using DesktopECG.Effects;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
 
 namespace DesktopECG.UCs
 {
     public partial class UcAlphaGame : UserControl
     {
         private Point _mousePointEletrodo;
-        private Point _startPoint;
-        private bool _enterPoint;
-        private Panel _panel;
-        private Form _form;
         private bool _isDragging;
         private Panel _pointPanel;
         private IList<EletrodoPoint> ListaPontosDropEletrodo;
         private IList<Point> ListaPosicoesIniciais;
         private int pontuacao;
 
-        public UcAlphaGame(Panel panel, Form form)
+        public UcAlphaGame()
         {
             InitializeComponent();
-            _panel = panel;
-            _form = form;
             pontuacao = 0;
             label2.Text = pontuacao.ToString();
-            ListaPontosDropEletrodo = new List<EletrodoPoint>() {
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point1.Location.X + point1.Size.Width,
-                    PosicaoMinimaX = point1.Location.X,
-                    PosicaoMaximaY = point1.Location.Y + point1.Size.Height,
-                    PosicaoMinimaY = point1.Location.Y,
-                    Tag = point1.Tag.ToString()
-                },
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point2.Location.X + point2.Size.Width,
-                    PosicaoMinimaX = point2.Location.X,
-                    PosicaoMaximaY = point2.Location.Y + point2.Size.Height,
-                    PosicaoMinimaY = point2.Location.Y,
-                    Tag = point2.Tag.ToString()
-                },
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point3.Location.X + point3.Size.Width,
-                    PosicaoMinimaX = point3.Location.X,
-                    PosicaoMaximaY = point3.Location.Y + point3.Size.Height,
-                    PosicaoMinimaY = point3.Location.Y,
-                    Tag = point3.Tag.ToString()
-                },
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point4.Location.X + point4.Size.Width,
-                    PosicaoMinimaX = point4.Location.X,
-                    PosicaoMaximaY = point4.Location.Y + point4.Size.Height,
-                    PosicaoMinimaY = point4.Location.Y,
-                    Tag = point4.Tag.ToString()
-                },
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point5.Location.X + point5.Size.Width,
-                    PosicaoMinimaX = point5.Location.X,
-                    PosicaoMaximaY = point5.Location.Y + point5.Size.Height,
-                    PosicaoMinimaY = point5.Location.Y,
-                    Tag = point5.Tag.ToString()
-                },
-                new EletrodoPoint(){
-                    PosicaoMaximaX = point6.Location.X + point6.Size.Width,
-                    PosicaoMinimaX = point6.Location.X,
-                    PosicaoMaximaY = point6.Location.Y + point6.Size.Height,
-                    PosicaoMinimaY = point6.Location.Y,
-                    Tag = point6.Tag.ToString()
-                },
-            };
+            ListaPontosDropEletrodo = new List<EletrodoPoint>();
+            foreach (var control in panel1.Controls)
+            {
+                if (control is Panel) 
+                {
+                    Panel panel = (control as Panel);
+                    panel.BackColor = Color.Transparent;
+                    ListaPontosDropEletrodo.Add(new EletrodoPoint()
+                    {
+                        PosicaoMaximaX = panel.Location.X + panel.Size.Width,
+                        PosicaoMinimaX = panel.Location.X,
+                        PosicaoMaximaY = panel.Location.Y + panel.Size.Height,
+                        PosicaoMinimaY = panel.Location.Y,
+                        Tag = panel.Tag.ToString()
+                    });
+                }
+            }
 
             ListaPosicoesIniciais = new List<Point>()
             {
@@ -136,10 +101,7 @@ namespace DesktopECG.UCs
         private void buttonVoltar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair do jogo?\nTodo o progresso será perdido!", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                _panel.Controls.Clear();
-                _panel.Controls.Add(new UcAlphaGameInitialScreen(_panel, _form));
-            }
+                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen());
 
             return;
 
