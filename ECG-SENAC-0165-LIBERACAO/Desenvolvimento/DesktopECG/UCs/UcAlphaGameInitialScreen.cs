@@ -31,5 +31,10 @@ namespace DesktopECG.UCs
                 FrmPrincipal.Instance.CloseScreen();
             return;
         }
+
+        private void UcAlphaGameInitialScreen_Load(object sender, EventArgs e)
+        {
+            comboBox1.SelectedIndex = 0;
+        }
     }
 }

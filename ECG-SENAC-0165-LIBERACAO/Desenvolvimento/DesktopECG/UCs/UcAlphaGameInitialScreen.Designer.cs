@@ -32,6 +32,7 @@
             labelPlay = new Label();
             label2 = new Label();
             labelSair = new Label();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // labelPlay
@@ -78,17 +79,30 @@
             labelSair.MouseEnter += Enter_Animation;
             labelSair.MouseLeave += Leave_Animation;
             // 
+            // comboBox1
+            // 
+            comboBox1.CausesValidation = false;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Padrão", "Realista", "Lúdico" });
+            comboBox1.Location = new Point(3, 3);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 3;
+            comboBox1.TabStop = false;
+            // 
             // UcAlphaGameInitialScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(comboBox1);
             Controls.Add(labelSair);
             Controls.Add(label2);
             Controls.Add(labelPlay);
             Name = "UcAlphaGameInitialScreen";
             Size = new Size(1264, 549);
+            Load += UcAlphaGameInitialScreen_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -98,5 +112,6 @@
         private Label labelPlay;
         private Label label2;
         private Label labelSair;
+        private ComboBox comboBox1;
     }
 }

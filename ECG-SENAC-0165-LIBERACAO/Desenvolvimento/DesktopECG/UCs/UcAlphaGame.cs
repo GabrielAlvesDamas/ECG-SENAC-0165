@@ -70,7 +70,7 @@ namespace DesktopECG.UCs
             {
                 EletrodoPoint? Eletrodo = ListaPontosDropEletrodo.Where(x => x.PosicaoMinimaX < pic.Location.X && x.PosicaoMaximaX > pic.Location.X &&
                                                                              x.PosicaoMinimaY < pic.Location.Y && x.PosicaoMaximaY > pic.Location.Y &&
-                                                                             x.Tag == pic.Tag).FirstOrDefault();
+                                                                             x.Tag == (string)pic.Tag).FirstOrDefault();
                 if (Eletrodo != null)
                 {
                     pic.Location = new Point() { X = Eletrodo.PosicaoMinimaX.Value + 10, Y = Eletrodo.PosicaoMinimaY.Value + 10 };
