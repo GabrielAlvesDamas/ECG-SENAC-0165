@@ -2,6 +2,8 @@ namespace DesktopECG
 {
     internal static class Program
     {
+
+        
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -13,5 +15,8 @@ namespace DesktopECG
             ApplicationConfiguration.Initialize();
             Application.Run(FrmPrincipal.Instance);
         }
+
+
+
     }
 }
