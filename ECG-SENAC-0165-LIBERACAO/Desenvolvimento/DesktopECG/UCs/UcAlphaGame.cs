@@ -1,4 +1,6 @@
 ﻿using DesktopECG.Effects;
+using DesktopECG.Enums;
+using DesktopECG.Properties;
 
 namespace DesktopECG.UCs
 {
@@ -19,7 +21,7 @@ namespace DesktopECG.UCs
             ListaPontosDropEletrodo = new List<EletrodoPoint>();
             foreach (var control in panel1.Controls)
             {
-                if (control is Panel) 
+                if (control is Panel)
                 {
                     Panel panel = (control as Panel);
                     panel.BackColor = Color.Transparent;
@@ -105,6 +107,29 @@ namespace DesktopECG.UCs
 
             return;
 
+        }
+
+        private void UcAlphaGame_Load(object sender, EventArgs e)
+        {
+            HandleChageLayout();
+        }
+
+        private void HandleChageLayout()
+        {
+            switch (Globals.TIPO_LAYOUT)
+            {
+
+                case TipoLayoutEnum.TipoLayout.PADRAO:
+                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    break;
+                case TipoLayoutEnum.TipoLayout.REALISTA:
+                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    break;
+                case TipoLayoutEnum.TipoLayout.LUDICO:
+                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    break;
+
+            }
         }
     }
 }

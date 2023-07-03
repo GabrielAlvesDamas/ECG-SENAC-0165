@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAlphaGameInitialScreen));
             labelPlay = new Label();
             label2 = new Label();
             labelSair = new Label();
@@ -89,17 +88,19 @@
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 3;
             comboBox1.TabStop = false;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // UcAlphaGameInitialScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.istockphoto_1317505195_612x612_1_png;
             BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(comboBox1);
             Controls.Add(labelSair);
             Controls.Add(label2);
             Controls.Add(labelPlay);
+            DoubleBuffered = true;
             Name = "UcAlphaGameInitialScreen";
             Size = new Size(1264, 549);
             Load += UcAlphaGameInitialScreen_Load;

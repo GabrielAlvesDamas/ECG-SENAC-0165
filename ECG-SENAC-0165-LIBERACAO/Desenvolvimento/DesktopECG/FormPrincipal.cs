@@ -1,3 +1,4 @@
+using DesktopECG.Enums;
 using DesktopECG.UCs;
 using System.Security.Principal;
 
@@ -5,6 +6,7 @@ namespace DesktopECG
 {
     public partial class FrmPrincipal : Form
     {
+
         private Point _mousePointWindow;
 
         private static FrmPrincipal _instance;
