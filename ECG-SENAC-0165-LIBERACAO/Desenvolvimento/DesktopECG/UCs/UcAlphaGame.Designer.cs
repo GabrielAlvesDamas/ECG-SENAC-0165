@@ -57,9 +57,9 @@
             // point6
             // 
             point6.BackColor = Color.WhiteSmoke;
-            point6.Location = new Point(316, 138);
+            point6.Location = new Point(494, 197);
             point6.Name = "point6";
-            point6.Size = new Size(57, 47);
+            point6.Size = new Size(28, 24);
             point6.TabIndex = 0;
             point6.Tag = "6";
             point6.Visible = false;
@@ -67,9 +67,9 @@
             // point5
             // 
             point5.BackColor = Color.WhiteSmoke;
-            point5.Location = new Point(305, 200);
+            point5.Location = new Point(460, 221);
             point5.Name = "point5";
-            point5.Size = new Size(58, 42);
+            point5.Size = new Size(28, 24);
             point5.TabIndex = 1;
             point5.Tag = "5";
             point5.Visible = false;
@@ -77,9 +77,9 @@
             // point4
             // 
             point4.BackColor = Color.WhiteSmoke;
-            point4.Location = new Point(1049, 128);
+            point4.Location = new Point(857, 197);
             point4.Name = "point4";
-            point4.Size = new Size(56, 57);
+            point4.Size = new Size(28, 24);
             point4.TabIndex = 2;
             point4.Tag = "4";
             point4.Visible = false;
@@ -87,9 +87,9 @@
             // point2
             // 
             point2.BackColor = Color.WhiteSmoke;
-            point2.Location = new Point(1049, 227);
+            point2.Location = new Point(857, 239);
             point2.Name = "point2";
-            point2.Size = new Size(70, 55);
+            point2.Size = new Size(28, 24);
             point2.TabIndex = 3;
             point2.Tag = "2";
             point2.Visible = false;
@@ -97,9 +97,9 @@
             // point1
             // 
             point1.BackColor = Color.WhiteSmoke;
-            point1.Location = new Point(579, 67);
+            point1.Location = new Point(608, 162);
             point1.Name = "point1";
-            point1.Size = new Size(55, 40);
+            point1.Size = new Size(28, 24);
             point1.TabIndex = 4;
             point1.Tag = "1";
             point1.Visible = false;
@@ -107,9 +107,9 @@
             // point3
             // 
             point3.BackColor = Color.WhiteSmoke;
-            point3.Location = new Point(562, 353);
+            point3.Location = new Point(608, 273);
             point3.Name = "point3";
-            point3.Size = new Size(57, 54);
+            point3.Size = new Size(28, 24);
             point3.TabIndex = 5;
             point3.Tag = "3";
             point3.Visible = false;
@@ -143,9 +143,9 @@
             eletrodo1.BackColor = Color.Transparent;
             eletrodo1.BackgroundImage = (Image)resources.GetObject("eletrodo1.BackgroundImage");
             eletrodo1.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo1.Location = new Point(239, 446);
+            eletrodo1.Location = new Point(45, 482);
             eletrodo1.Name = "eletrodo1";
-            eletrodo1.Size = new Size(39, 88);
+            eletrodo1.Size = new Size(23, 45);
             eletrodo1.TabIndex = 8;
             eletrodo1.TabStop = false;
             eletrodo1.Tag = "1";
@@ -158,9 +158,9 @@
             eletrodo2.BackColor = Color.Transparent;
             eletrodo2.BackgroundImage = (Image)resources.GetObject("eletrodo2.BackgroundImage");
             eletrodo2.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo2.Location = new Point(295, 446);
+            eletrodo2.Location = new Point(101, 482);
             eletrodo2.Name = "eletrodo2";
-            eletrodo2.Size = new Size(39, 88);
+            eletrodo2.Size = new Size(23, 45);
             eletrodo2.TabIndex = 9;
             eletrodo2.TabStop = false;
             eletrodo2.Tag = "2";
@@ -173,9 +173,9 @@
             eletrodo3.BackColor = Color.Transparent;
             eletrodo3.BackgroundImage = (Image)resources.GetObject("eletrodo3.BackgroundImage");
             eletrodo3.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo3.Location = new Point(349, 446);
+            eletrodo3.Location = new Point(155, 482);
             eletrodo3.Name = "eletrodo3";
-            eletrodo3.Size = new Size(39, 88);
+            eletrodo3.Size = new Size(23, 45);
             eletrodo3.TabIndex = 10;
             eletrodo3.TabStop = false;
             eletrodo3.Tag = "3";
@@ -188,9 +188,9 @@
             eletrodo4.BackColor = Color.Transparent;
             eletrodo4.BackgroundImage = (Image)resources.GetObject("eletrodo4.BackgroundImage");
             eletrodo4.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo4.Location = new Point(402, 446);
+            eletrodo4.Location = new Point(208, 482);
             eletrodo4.Name = "eletrodo4";
-            eletrodo4.Size = new Size(39, 88);
+            eletrodo4.Size = new Size(23, 45);
             eletrodo4.TabIndex = 11;
             eletrodo4.TabStop = false;
             eletrodo4.Tag = "4";
@@ -203,9 +203,9 @@
             eletrodo5.BackColor = Color.Transparent;
             eletrodo5.BackgroundImage = (Image)resources.GetObject("eletrodo5.BackgroundImage");
             eletrodo5.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo5.Location = new Point(453, 446);
+            eletrodo5.Location = new Point(259, 482);
             eletrodo5.Name = "eletrodo5";
-            eletrodo5.Size = new Size(39, 88);
+            eletrodo5.Size = new Size(23, 45);
             eletrodo5.TabIndex = 12;
             eletrodo5.TabStop = false;
             eletrodo5.Tag = "5";
@@ -218,9 +218,9 @@
             eletrodo6.BackColor = Color.Transparent;
             eletrodo6.BackgroundImage = (Image)resources.GetObject("eletrodo6.BackgroundImage");
             eletrodo6.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo6.Location = new Point(504, 446);
+            eletrodo6.Location = new Point(310, 482);
             eletrodo6.Name = "eletrodo6";
-            eletrodo6.Size = new Size(39, 88);
+            eletrodo6.Size = new Size(23, 45);
             eletrodo6.TabIndex = 13;
             eletrodo6.TabStop = false;
             eletrodo6.Tag = "6";
@@ -238,7 +238,7 @@
             buttonVoltar.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonVoltar.FlatStyle = FlatStyle.Flat;
             buttonVoltar.Image = Properties.Resources.back_img;
-            buttonVoltar.Location = new Point(3, 71);
+            buttonVoltar.Location = new Point(0, 1);
             buttonVoltar.Name = "buttonVoltar";
             buttonVoltar.Size = new Size(65, 57);
             buttonVoltar.TabIndex = 19;
@@ -249,7 +249,7 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources.Tela_do_Jogo___01;
+            panel1.BackgroundImage = Properties.Resources.Personagem1;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(point3);
             panel1.Controls.Add(buttonVoltar);

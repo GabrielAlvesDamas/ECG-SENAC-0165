@@ -11,6 +11,13 @@ namespace DesktopECG.UCs
             InitializeComponent();
         }
 
+        public UcAlphaGameInitialScreen(TipoLayoutEnum.TipoLayout layout)
+        {
+            InitializeComponent();
+            Globals.TIPO_LAYOUT = layout;
+            HandleChageLayout();
+        }
+
         private void Enter_Animation(object sender, EventArgs e)
         {
             ControlAnimation.Enter(sender, e);
@@ -52,7 +59,7 @@ namespace DesktopECG.UCs
                     labelSair.ForeColor = Color.Black;
                     break;
                 case TipoLayoutEnum.TipoLayout.REALISTA:
-                    this.BackgroundImage = Resources.image_inicial_do_jogo;
+                    this.BackgroundImage = Resources.Cenario_inicial;
                     labelPlay.ForeColor = Color.White;
                     label2.ForeColor = Color.White;
                     labelSair.ForeColor = Color.White;

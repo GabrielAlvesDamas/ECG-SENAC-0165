@@ -103,8 +103,7 @@ namespace DesktopECG.UCs
         private void buttonVoltar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair do jogo?\nTodo o progresso será perdido!", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen());
-
+                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen(Globals.TIPO_LAYOUT));
             return;
 
         }
@@ -120,13 +119,31 @@ namespace DesktopECG.UCs
             {
 
                 case TipoLayoutEnum.TipoLayout.PADRAO:
-                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    panel1.BackgroundImage = Resources.Personagem1;
+                    point1.Location = new Point(460, 221);
+                    point2.Location = new Point(494, 197);
+                    point3.Location = new Point(608, 162);
+                    point4.Location = new Point(608, 273);
+                    point5.Location = new Point(857, 197);
+                    point6.Location = new Point(857, 239);
                     break;
                 case TipoLayoutEnum.TipoLayout.REALISTA:
-                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    panel1.BackgroundImage = Resources._8;
+                    point1.Location = new Point(268, 221);
+                    point2.Location = new Point(329, 194);
+                    point3.Location = new Point(579, 113);
+                    point4.Location = new Point(579, 328);
+                    point5.Location = new Point(1157, 194);
+                    point6.Location = new Point(1157, 244);
                     break;
                 case TipoLayoutEnum.TipoLayout.LUDICO:
-                    panel1.BackgroundImage = Resources.image_inicial_do_jogo;
+                    panel1.BackgroundImage = Resources._02___careca_png;
+                    point1.Location = new Point(613, 205);
+                    point2.Location = new Point(668, 137);
+                    point3.Location = new Point(826, 27);
+                    point4.Location = new Point(826, 365);
+                    point5.Location = new Point(1087, 126);
+                    point6.Location = new Point(1087, 273);
                     break;
 
             }

@@ -94,7 +94,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.istockphoto_1317505195_612x612_1_png;
+            BackgroundImage = Properties.Resources.Cenario_inicial2;
             BackgroundImageLayout = ImageLayout.Stretch;
             Controls.Add(comboBox1);
             Controls.Add(labelSair);

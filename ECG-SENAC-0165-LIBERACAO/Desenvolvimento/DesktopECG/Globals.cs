@@ -9,6 +9,6 @@ namespace DesktopECG
 {
     public static class Globals
     {
-        public static TipoLayoutEnum.TipoLayout TIPO_LAYOUT { get; set; } = TipoLayoutEnum.TipoLayout.PADRAO;
+        public static TipoLayoutEnum.TipoLayout TIPO_LAYOUT { get; set; }
     }
 }

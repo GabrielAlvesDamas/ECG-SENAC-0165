@@ -93,6 +93,16 @@ namespace DesktopECG.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8 {
+            get {
+                object obj = ResourceManager.GetObject("8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_img {
             get {
                 object obj = ResourceManager.GetObject("back-img", resourceCulture);
@@ -143,6 +153,36 @@ namespace DesktopECG.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cenario_inicial {
+            get {
+                object obj = ResourceManager.GetObject("Cenario inicial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cenario_inicial1 {
+            get {
+                object obj = ResourceManager.GetObject("Cenario inicial1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cenario_inicial2 {
+            get {
+                object obj = ResourceManager.GetObject("Cenario inicial2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_voltar_16__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-voltar-16 (1)", resourceCulture);
@@ -186,6 +226,16 @@ namespace DesktopECG.Properties {
         internal static System.Drawing.Bitmap Personagem1__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Personagem1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Personagem11 {
+            get {
+                object obj = ResourceManager.GetObject("Personagem11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
