@@ -1,4 +1,6 @@
 ﻿using DesktopECG.Effects;
+using DesktopECG.Enums;
+using DesktopECG.Properties;
 
 namespace DesktopECG.UCs
 {
@@ -19,7 +21,7 @@ namespace DesktopECG.UCs
             ListaPontosDropEletrodo = new List<EletrodoPoint>();
             foreach (var control in panel1.Controls)
             {
-                if (control is Panel) 
+                if (control is Panel)
                 {
                     Panel panel = (control as Panel);
                     panel.BackColor = Color.Transparent;
@@ -101,10 +103,95 @@ namespace DesktopECG.UCs
         private void buttonVoltar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair do jogo?\nTodo o progresso será perdido!", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen());
-
+                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen(Globals.TIPO_LAYOUT));
             return;
 
+        }
+
+        private void UcAlphaGame_Load(object sender, EventArgs e)
+        {
+            HandleChageLayout();
+        }
+
+        private void HandleChageLayout()
+        {
+            switch (Globals.TIPO_LAYOUT)
+            {
+
+                case TipoLayoutEnum.TipoLayout.PADRAO:
+                    panel1.BackgroundImage = Resources.Personagem1;
+                    eletrodoPoint1.Location = new Point(560, 382);
+                    eletrodoPoint1.Size = new Size(10, 10);
+                    eletrodoPoint2.Location = new Point(560, 364);
+                    eletrodoPoint2.Size = new Size(10, 10);
+                    eletrodoPoint3.Location = new Point(574, 356);
+                    eletrodoPoint3.Size = new Size(10, 10);
+                    eletrodoPoint4.Location = new Point(580, 343);
+                    eletrodoPoint4.Size = new Size(10, 10);
+                    eletrodoPoint5.Location = new Point(581, 330);
+                    eletrodoPoint5.Size = new Size(10, 10);
+                    eletrodoPoint6.Location = new Point(580, 318);
+                    eletrodoPoint6.Size = new Size(10, 10);
+
+                    Pa1.Location = new Point(680, 456);
+                    Pa1.Size = new Size(14, 25);
+                    Pa2.Location = new Point(680, 272);
+                    Pa2.Size = new Size(14, 25);
+                    Pa3.Location = new Point(953, 394);
+                    Pa3.Size = new Size(14, 25);
+                    Pa4.Location = new Point(953, 333);
+                    Pa4.Size = new Size(14, 25);
+                    break;
+                case TipoLayoutEnum.TipoLayout.REALISTA:
+                    panel1.BackgroundImage = Resources._8;
+                    eletrodoPoint1.Location = new Point(750, 371);
+                    eletrodoPoint1.Size = new Size(20, 20);
+                    eletrodoPoint2.Location = new Point(750, 299);
+                    eletrodoPoint2.Size = new Size(20, 20);
+                    eletrodoPoint3.Location = new Point(778, 273);
+                    eletrodoPoint3.Size = new Size(20, 20);
+                    eletrodoPoint4.Location = new Point(797, 245);
+                    eletrodoPoint4.Size = new Size(20, 20);
+                    eletrodoPoint5.Location = new Point(800, 210);
+                    eletrodoPoint5.Size = new Size(20, 20);
+                    eletrodoPoint6.Location = new Point(785, 184);
+                    eletrodoPoint6.Size = new Size(20, 20);
+
+                    Pa1.Location = new Point(880, 3);
+                    Pa1.Size = new Size(48, 157);
+                    Pa2.Location = new Point(880, 537);
+                    Pa2.Size = new Size(48, 157);
+                    Pa3.Location = new Point(1190, 145);
+                    Pa3.Size = new Size(48, 157);
+                    Pa4.Location = new Point(1190, 388);
+                    Pa4.Size = new Size(48, 157);
+                    break;
+                case TipoLayoutEnum.TipoLayout.LUDICO:
+                    panel1.BackgroundImage = Resources._02___careca_png;
+                    eletrodoPoint1.Location = new Point(750, 371);
+                    eletrodoPoint1.Size = new Size(20, 20);
+                    eletrodoPoint2.Location = new Point(750, 299);
+                    eletrodoPoint2.Size = new Size(20, 20);
+                    eletrodoPoint3.Location = new Point(778, 273);
+                    eletrodoPoint3.Size = new Size(20, 20);
+                    eletrodoPoint4.Location = new Point(797, 245);
+                    eletrodoPoint4.Size = new Size(20, 20);
+                    eletrodoPoint5.Location = new Point(800, 210);
+                    eletrodoPoint5.Size = new Size(20, 20);
+                    eletrodoPoint6.Location = new Point(785, 184);
+                    eletrodoPoint6.Size = new Size(20, 20);
+
+                    Pa1.Location = new Point(880, 3);
+                    Pa1.Size = new Size(48, 157);
+                    Pa2.Location = new Point(880, 537);
+                    Pa2.Size = new Size(48, 157);
+                    Pa3.Location = new Point(1190, 145);
+                    Pa3.Size = new Size(48, 157);
+                    Pa4.Location = new Point(1190, 388);
+                    Pa4.Size = new Size(48, 157);
+                    break;
+
+            }
         }
     }
 }

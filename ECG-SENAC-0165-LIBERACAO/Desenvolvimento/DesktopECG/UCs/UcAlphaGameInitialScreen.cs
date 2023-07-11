@@ -1,4 +1,6 @@
 ﻿using DesktopECG.Effects;
+using DesktopECG.Enums;
+using DesktopECG.Properties;
 
 namespace DesktopECG.UCs
 {
@@ -7,6 +9,13 @@ namespace DesktopECG.UCs
         public UcAlphaGameInitialScreen()
         {
             InitializeComponent();
+        }
+
+        public UcAlphaGameInitialScreen(TipoLayoutEnum.TipoLayout layout)
+        {
+            InitializeComponent();
+            Globals.TIPO_LAYOUT = layout;
+            HandleChageLayout();
         }
 
         private void Enter_Animation(object sender, EventArgs e)
@@ -35,6 +44,40 @@ namespace DesktopECG.UCs
         private void UcAlphaGameInitialScreen_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 0;
+            HandleChageLayout();
+        }
+
+        private void HandleChageLayout()
+        {
+            switch (Globals.TIPO_LAYOUT)
+            {
+
+                case TipoLayoutEnum.TipoLayout.PADRAO:
+                    this.BackgroundImage = Resources.image_inicial_do_jogo;
+                    labelPlay.ForeColor = Color.Black;
+                    label2.ForeColor = Color.Black;
+                    labelSair.ForeColor = Color.Black;
+                    break;
+                case TipoLayoutEnum.TipoLayout.REALISTA:
+                    this.BackgroundImage = Resources.Cenario_inicial;
+                    labelPlay.ForeColor = Color.White;
+                    label2.ForeColor = Color.White;
+                    labelSair.ForeColor = Color.White;
+                    break;
+                case TipoLayoutEnum.TipoLayout.LUDICO:
+                    this.BackgroundImage = Resources.istockphoto_1317505195_612x612_1_png;
+                    labelPlay.ForeColor = Color.Black;
+                    label2.ForeColor = Color.Black;
+                    labelSair.ForeColor = Color.Black;
+                    break;
+
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Globals.TIPO_LAYOUT = (TipoLayoutEnum.TipoLayout)comboBox1.SelectedIndex;
+            HandleChageLayout();
         }
     }
 }
