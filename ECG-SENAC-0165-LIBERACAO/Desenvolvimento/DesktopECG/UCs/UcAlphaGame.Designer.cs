@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAlphaGame));
-            point6 = new Panel();
-            point5 = new Panel();
-            point4 = new Panel();
-            point2 = new Panel();
-            point1 = new Panel();
-            point3 = new Panel();
+            paPoint2 = new Panel();
+            eletrodoPoint6 = new Panel();
+            paPoint4 = new Panel();
+            eletrodoPoint5 = new Panel();
+            paPoint3 = new Panel();
+            eletrodoPoint4 = new Panel();
             label1 = new Label();
             label2 = new Label();
             eletrodo1 = new PictureBox();
@@ -45,6 +45,14 @@
             eletrodo6 = new PictureBox();
             buttonVoltar = new Button();
             panel1 = new Panel();
+            paPoint1 = new Panel();
+            eletrodoPoint3 = new Panel();
+            eletrodoPoint1 = new Panel();
+            eletrodoPoint2 = new Panel();
+            Pa4 = new PictureBox();
+            Pa3 = new PictureBox();
+            Pa2 = new PictureBox();
+            Pa1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)eletrodo1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)eletrodo2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)eletrodo3).BeginInit();
@@ -52,67 +60,71 @@
             ((System.ComponentModel.ISupportInitialize)eletrodo5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)eletrodo6).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Pa4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Pa3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Pa2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Pa1).BeginInit();
             SuspendLayout();
             // 
-            // point6
+            // paPoint2
             // 
-            point6.BackColor = Color.WhiteSmoke;
-            point6.Location = new Point(494, 197);
-            point6.Name = "point6";
-            point6.Size = new Size(28, 24);
-            point6.TabIndex = 0;
-            point6.Tag = "6";
-            point6.Visible = false;
+            paPoint2.BackColor = Color.WhiteSmoke;
+            paPoint2.Location = new Point(880, 537);
+            paPoint2.Name = "paPoint2";
+            paPoint2.Size = new Size(48, 157);
+            paPoint2.TabIndex = 0;
+            paPoint2.Tag = "6";
+            paPoint2.Visible = false;
             // 
-            // point5
+            // eletrodoPoint6
             // 
-            point5.BackColor = Color.WhiteSmoke;
-            point5.Location = new Point(460, 221);
-            point5.Name = "point5";
-            point5.Size = new Size(28, 24);
-            point5.TabIndex = 1;
-            point5.Tag = "5";
-            point5.Visible = false;
+            eletrodoPoint6.BackColor = Color.WhiteSmoke;
+            eletrodoPoint6.Location = new Point(750, 371);
+            eletrodoPoint6.Name = "eletrodoPoint6";
+            eletrodoPoint6.Size = new Size(20, 20);
+            eletrodoPoint6.TabIndex = 1;
+            eletrodoPoint6.Tag = "5";
+            eletrodoPoint6.Visible = false;
             // 
-            // point4
+            // paPoint4
             // 
-            point4.BackColor = Color.WhiteSmoke;
-            point4.Location = new Point(857, 197);
-            point4.Name = "point4";
-            point4.Size = new Size(28, 24);
-            point4.TabIndex = 2;
-            point4.Tag = "4";
-            point4.Visible = false;
+            paPoint4.BackColor = Color.WhiteSmoke;
+            paPoint4.Location = new Point(1190, 388);
+            paPoint4.Name = "paPoint4";
+            paPoint4.Size = new Size(48, 157);
+            paPoint4.TabIndex = 2;
+            paPoint4.Tag = "4";
+            paPoint4.Visible = false;
             // 
-            // point2
+            // eletrodoPoint5
             // 
-            point2.BackColor = Color.WhiteSmoke;
-            point2.Location = new Point(857, 239);
-            point2.Name = "point2";
-            point2.Size = new Size(28, 24);
-            point2.TabIndex = 3;
-            point2.Tag = "2";
-            point2.Visible = false;
+            eletrodoPoint5.BackColor = Color.WhiteSmoke;
+            eletrodoPoint5.Location = new Point(785, 184);
+            eletrodoPoint5.Name = "eletrodoPoint5";
+            eletrodoPoint5.Size = new Size(20, 20);
+            eletrodoPoint5.TabIndex = 3;
+            eletrodoPoint5.Tag = "2";
+            eletrodoPoint5.Visible = false;
             // 
-            // point1
+            // paPoint3
             // 
-            point1.BackColor = Color.WhiteSmoke;
-            point1.Location = new Point(608, 162);
-            point1.Name = "point1";
-            point1.Size = new Size(28, 24);
-            point1.TabIndex = 4;
-            point1.Tag = "1";
-            point1.Visible = false;
+            paPoint3.BackColor = Color.WhiteSmoke;
+            paPoint3.Location = new Point(1190, 145);
+            paPoint3.Name = "paPoint3";
+            paPoint3.Size = new Size(48, 157);
+            paPoint3.TabIndex = 4;
+            paPoint3.Tag = "1";
+            paPoint3.Visible = false;
             // 
-            // point3
+            // eletrodoPoint4
             // 
-            point3.BackColor = Color.WhiteSmoke;
-            point3.Location = new Point(608, 273);
-            point3.Name = "point3";
-            point3.Size = new Size(28, 24);
-            point3.TabIndex = 5;
-            point3.Tag = "3";
-            point3.Visible = false;
+            eletrodoPoint4.BackColor = Color.WhiteSmoke;
+            eletrodoPoint4.Location = new Point(800, 210);
+            eletrodoPoint4.Name = "eletrodoPoint4";
+            eletrodoPoint4.Size = new Size(20, 20);
+            eletrodoPoint4.TabIndex = 5;
+            eletrodoPoint4.Tag = "3";
+            eletrodoPoint4.Visible = false;
             // 
             // label1
             // 
@@ -143,9 +155,9 @@
             eletrodo1.BackColor = Color.Transparent;
             eletrodo1.BackgroundImage = (Image)resources.GetObject("eletrodo1.BackgroundImage");
             eletrodo1.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo1.Location = new Point(45, 482);
+            eletrodo1.Location = new Point(45, 823);
             eletrodo1.Name = "eletrodo1";
-            eletrodo1.Size = new Size(23, 45);
+            eletrodo1.Size = new Size(12, 27);
             eletrodo1.TabIndex = 8;
             eletrodo1.TabStop = false;
             eletrodo1.Tag = "1";
@@ -158,9 +170,9 @@
             eletrodo2.BackColor = Color.Transparent;
             eletrodo2.BackgroundImage = (Image)resources.GetObject("eletrodo2.BackgroundImage");
             eletrodo2.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo2.Location = new Point(101, 482);
+            eletrodo2.Location = new Point(101, 823);
             eletrodo2.Name = "eletrodo2";
-            eletrodo2.Size = new Size(23, 45);
+            eletrodo2.Size = new Size(12, 27);
             eletrodo2.TabIndex = 9;
             eletrodo2.TabStop = false;
             eletrodo2.Tag = "2";
@@ -173,9 +185,9 @@
             eletrodo3.BackColor = Color.Transparent;
             eletrodo3.BackgroundImage = (Image)resources.GetObject("eletrodo3.BackgroundImage");
             eletrodo3.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo3.Location = new Point(155, 482);
+            eletrodo3.Location = new Point(155, 823);
             eletrodo3.Name = "eletrodo3";
-            eletrodo3.Size = new Size(23, 45);
+            eletrodo3.Size = new Size(12, 27);
             eletrodo3.TabIndex = 10;
             eletrodo3.TabStop = false;
             eletrodo3.Tag = "3";
@@ -188,9 +200,9 @@
             eletrodo4.BackColor = Color.Transparent;
             eletrodo4.BackgroundImage = (Image)resources.GetObject("eletrodo4.BackgroundImage");
             eletrodo4.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo4.Location = new Point(208, 482);
+            eletrodo4.Location = new Point(208, 823);
             eletrodo4.Name = "eletrodo4";
-            eletrodo4.Size = new Size(23, 45);
+            eletrodo4.Size = new Size(12, 27);
             eletrodo4.TabIndex = 11;
             eletrodo4.TabStop = false;
             eletrodo4.Tag = "4";
@@ -203,9 +215,9 @@
             eletrodo5.BackColor = Color.Transparent;
             eletrodo5.BackgroundImage = (Image)resources.GetObject("eletrodo5.BackgroundImage");
             eletrodo5.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo5.Location = new Point(259, 482);
+            eletrodo5.Location = new Point(259, 823);
             eletrodo5.Name = "eletrodo5";
-            eletrodo5.Size = new Size(23, 45);
+            eletrodo5.Size = new Size(12, 27);
             eletrodo5.TabIndex = 12;
             eletrodo5.TabStop = false;
             eletrodo5.Tag = "5";
@@ -218,9 +230,9 @@
             eletrodo6.BackColor = Color.Transparent;
             eletrodo6.BackgroundImage = (Image)resources.GetObject("eletrodo6.BackgroundImage");
             eletrodo6.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo6.Location = new Point(310, 482);
+            eletrodo6.Location = new Point(310, 823);
             eletrodo6.Name = "eletrodo6";
-            eletrodo6.Size = new Size(23, 45);
+            eletrodo6.Size = new Size(12, 27);
             eletrodo6.TabIndex = 13;
             eletrodo6.TabStop = false;
             eletrodo6.Tag = "6";
@@ -249,24 +261,116 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources.Personagem1;
+            panel1.BackgroundImage = Properties.Resources._02___careca_png;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(point3);
+            panel1.Controls.Add(paPoint1);
+            panel1.Controls.Add(eletrodoPoint3);
+            panel1.Controls.Add(eletrodoPoint1);
+            panel1.Controls.Add(eletrodoPoint4);
+            panel1.Controls.Add(eletrodoPoint2);
             panel1.Controls.Add(buttonVoltar);
-            panel1.Controls.Add(point2);
-            panel1.Controls.Add(point4);
-            panel1.Controls.Add(point5);
-            panel1.Controls.Add(point6);
-            panel1.Controls.Add(point1);
+            panel1.Controls.Add(eletrodoPoint5);
+            panel1.Controls.Add(paPoint4);
+            panel1.Controls.Add(eletrodoPoint6);
+            panel1.Controls.Add(paPoint2);
+            panel1.Controls.Add(paPoint3);
             panel1.Location = new Point(0, -1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1264, 457);
+            panel1.Size = new Size(1386, 739);
             panel1.TabIndex = 21;
+            // 
+            // paPoint1
+            // 
+            paPoint1.BackColor = Color.WhiteSmoke;
+            paPoint1.Location = new Point(880, 3);
+            paPoint1.Name = "paPoint1";
+            paPoint1.Size = new Size(48, 157);
+            paPoint1.TabIndex = 1;
+            paPoint1.Tag = "6";
+            paPoint1.Visible = false;
+            // 
+            // eletrodoPoint3
+            // 
+            eletrodoPoint3.BackColor = Color.WhiteSmoke;
+            eletrodoPoint3.Location = new Point(797, 245);
+            eletrodoPoint3.Name = "eletrodoPoint3";
+            eletrodoPoint3.Size = new Size(20, 20);
+            eletrodoPoint3.TabIndex = 27;
+            // 
+            // eletrodoPoint1
+            // 
+            eletrodoPoint1.BackColor = Color.WhiteSmoke;
+            eletrodoPoint1.Location = new Point(750, 299);
+            eletrodoPoint1.Name = "eletrodoPoint1";
+            eletrodoPoint1.Size = new Size(20, 20);
+            eletrodoPoint1.TabIndex = 6;
+            eletrodoPoint1.Tag = "3";
+            eletrodoPoint1.Visible = false;
+            // 
+            // eletrodoPoint2
+            // 
+            eletrodoPoint2.BackColor = Color.WhiteSmoke;
+            eletrodoPoint2.Location = new Point(778, 273);
+            eletrodoPoint2.Name = "eletrodoPoint2";
+            eletrodoPoint2.Size = new Size(20, 20);
+            eletrodoPoint2.TabIndex = 26;
+            // 
+            // Pa4
+            // 
+            Pa4.BackColor = Color.Transparent;
+            Pa4.BackgroundImage = (Image)resources.GetObject("Pa4.BackgroundImage");
+            Pa4.BackgroundImageLayout = ImageLayout.Stretch;
+            Pa4.Location = new Point(762, 816);
+            Pa4.Name = "Pa4";
+            Pa4.Size = new Size(18, 34);
+            Pa4.TabIndex = 25;
+            Pa4.TabStop = false;
+            Pa4.Tag = "6";
+            // 
+            // Pa3
+            // 
+            Pa3.BackColor = Color.Transparent;
+            Pa3.BackgroundImage = (Image)resources.GetObject("Pa3.BackgroundImage");
+            Pa3.BackgroundImageLayout = ImageLayout.Stretch;
+            Pa3.Location = new Point(711, 816);
+            Pa3.Name = "Pa3";
+            Pa3.Size = new Size(18, 34);
+            Pa3.TabIndex = 24;
+            Pa3.TabStop = false;
+            Pa3.Tag = "5";
+            // 
+            // Pa2
+            // 
+            Pa2.BackColor = Color.Transparent;
+            Pa2.BackgroundImage = (Image)resources.GetObject("Pa2.BackgroundImage");
+            Pa2.BackgroundImageLayout = ImageLayout.Stretch;
+            Pa2.Location = new Point(660, 816);
+            Pa2.Name = "Pa2";
+            Pa2.Size = new Size(18, 34);
+            Pa2.TabIndex = 23;
+            Pa2.TabStop = false;
+            Pa2.Tag = "4";
+            // 
+            // Pa1
+            // 
+            Pa1.BackColor = Color.Transparent;
+            Pa1.BackgroundImage = (Image)resources.GetObject("Pa1.BackgroundImage");
+            Pa1.BackgroundImageLayout = ImageLayout.Stretch;
+            Pa1.Location = new Point(607, 816);
+            Pa1.Name = "Pa1";
+            Pa1.Size = new Size(18, 34);
+            Pa1.TabIndex = 22;
+            Pa1.TabStop = false;
+            Pa1.Tag = "3";
             // 
             // UcAlphaGame
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(Pa4);
+            Controls.Add(Pa3);
+            Controls.Add(Pa2);
+            Controls.Add(Pa1);
             Controls.Add(eletrodo1);
             Controls.Add(eletrodo6);
             Controls.Add(eletrodo5);
@@ -277,7 +381,7 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             Name = "UcAlphaGame";
-            Size = new Size(1264, 549);
+            Size = new Size(1386, 888);
             Load += UcAlphaGame_Load;
             ((System.ComponentModel.ISupportInitialize)eletrodo1).EndInit();
             ((System.ComponentModel.ISupportInitialize)eletrodo2).EndInit();
@@ -286,18 +390,22 @@
             ((System.ComponentModel.ISupportInitialize)eletrodo5).EndInit();
             ((System.ComponentModel.ISupportInitialize)eletrodo6).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)Pa4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Pa3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Pa2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Pa1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Panel point6;
-        private Panel point5;
-        private Panel point4;
-        private Panel point2;
-        private Panel point1;
-        private Panel point3;
+        private Panel paPoint2;
+        private Panel eletrodoPoint6;
+        private Panel paPoint4;
+        private Panel eletrodoPoint5;
+        private Panel paPoint3;
+        private Panel eletrodoPoint4;
         private Label label1;
         private Label label2;
         private PictureBox eletrodo1;
@@ -308,5 +416,13 @@
         private PictureBox eletrodo6;
         private Button buttonVoltar;
         private Panel panel1;
+        private PictureBox Pa4;
+        private PictureBox Pa3;
+        private PictureBox Pa2;
+        private PictureBox Pa1;
+        private Panel eletrodoPoint1;
+        private Panel eletrodoPoint2;
+        private Panel eletrodoPoint3;
+        private Panel paPoint1;
     }
 }

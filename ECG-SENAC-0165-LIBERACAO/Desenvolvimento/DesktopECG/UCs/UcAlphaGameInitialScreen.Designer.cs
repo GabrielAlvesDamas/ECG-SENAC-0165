@@ -40,7 +40,7 @@
             labelPlay.BackColor = Color.Transparent;
             labelPlay.Cursor = Cursors.Hand;
             labelPlay.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            labelPlay.Location = new Point(601, 188);
+            labelPlay.Location = new Point(643, 329);
             labelPlay.Name = "labelPlay";
             labelPlay.Size = new Size(104, 37);
             labelPlay.TabIndex = 0;
@@ -55,7 +55,7 @@
             label2.BackColor = Color.Transparent;
             label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(588, 260);
+            label2.Location = new Point(630, 401);
             label2.Name = "label2";
             label2.Size = new Size(134, 37);
             label2.TabIndex = 1;
@@ -69,7 +69,7 @@
             labelSair.BackColor = Color.Transparent;
             labelSair.Cursor = Cursors.Hand;
             labelSair.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            labelSair.Location = new Point(611, 333);
+            labelSair.Location = new Point(653, 474);
             labelSair.Name = "labelSair";
             labelSair.Size = new Size(94, 37);
             labelSair.TabIndex = 2;
@@ -102,7 +102,7 @@
             Controls.Add(labelPlay);
             DoubleBuffered = true;
             Name = "UcAlphaGameInitialScreen";
-            Size = new Size(1264, 549);
+            Size = new Size(1386, 888);
             Load += UcAlphaGameInitialScreen_Load;
             ResumeLayout(false);
             PerformLayout();

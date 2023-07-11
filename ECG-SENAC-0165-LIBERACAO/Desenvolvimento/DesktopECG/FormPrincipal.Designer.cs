@@ -43,7 +43,7 @@
             WindowBorder.Dock = DockStyle.Top;
             WindowBorder.Location = new Point(0, 0);
             WindowBorder.Name = "WindowBorder";
-            WindowBorder.Size = new Size(1264, 21);
+            WindowBorder.Size = new Size(1386, 21);
             WindowBorder.TabIndex = 0;
             WindowBorder.MouseDown += WindowBorder_MouseDown;
             WindowBorder.MouseMove += WindowBorder_MouseMove;
@@ -56,7 +56,7 @@
             buttonMinimizeWindow.FlatStyle = FlatStyle.Flat;
             buttonMinimizeWindow.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonMinimizeWindow.ForeColor = Color.Transparent;
-            buttonMinimizeWindow.Location = new Point(1189, 0);
+            buttonMinimizeWindow.Location = new Point(1309, 0);
             buttonMinimizeWindow.Name = "buttonMinimizeWindow";
             buttonMinimizeWindow.Size = new Size(37, 21);
             buttonMinimizeWindow.TabIndex = 2;
@@ -73,7 +73,7 @@
             buttonCloseWindow.FlatStyle = FlatStyle.Flat;
             buttonCloseWindow.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             buttonCloseWindow.ForeColor = Color.Transparent;
-            buttonCloseWindow.Location = new Point(1226, 0);
+            buttonCloseWindow.Location = new Point(1346, 0);
             buttonCloseWindow.Name = "buttonCloseWindow";
             buttonCloseWindow.Size = new Size(37, 21);
             buttonCloseWindow.TabIndex = 1;
@@ -87,7 +87,7 @@
             panelUc.Dock = DockStyle.Fill;
             panelUc.Location = new Point(0, 21);
             panelUc.Name = "panelUc";
-            panelUc.Size = new Size(1264, 528);
+            panelUc.Size = new Size(1386, 867);
             panelUc.TabIndex = 1;
             // 
             // FrmPrincipal
@@ -95,7 +95,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1264, 549);
+            ClientSize = new Size(1386, 888);
             Controls.Add(panelUc);
             Controls.Add(WindowBorder);
             FormBorderStyle = FormBorderStyle.None;
