@@ -93,6 +93,16 @@ namespace DesktopECG.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _11 {
+            get {
+                object obj = ResourceManager.GetObject("11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8 {
             get {
                 object obj = ResourceManager.GetObject("8", resourceCulture);
@@ -183,6 +193,16 @@ namespace DesktopECG.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eletrodo_8bit {
+            get {
+                object obj = ResourceManager.GetObject("eletrodo 8bit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_voltar_16__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-voltar-16 (1)", resourceCulture);
@@ -256,6 +276,16 @@ namespace DesktopECG.Properties {
         internal static System.Drawing.Bitmap Tela_do_Jogo___01 {
             get {
                 object obj = ResourceManager.GetObject("Tela do Jogo - 01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thumbnail_Eletrodo {
+            get {
+                object obj = ResourceManager.GetObject("thumbnail_Eletrodo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
