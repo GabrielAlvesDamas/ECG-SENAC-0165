@@ -73,7 +73,7 @@
             paPoint2.Name = "paPoint2";
             paPoint2.Size = new Size(28, 54);
             paPoint2.TabIndex = 0;
-            paPoint2.Tag = "6";
+            paPoint2.Tag = "8";
             paPoint2.Visible = false;
             // 
             // eletrodoPoint6
@@ -83,7 +83,7 @@
             eletrodoPoint6.Name = "eletrodoPoint6";
             eletrodoPoint6.Size = new Size(12, 12);
             eletrodoPoint6.TabIndex = 1;
-            eletrodoPoint6.Tag = "5";
+            eletrodoPoint6.Tag = "1";
             eletrodoPoint6.Visible = false;
             // 
             // paPoint4
@@ -93,7 +93,7 @@
             paPoint4.Name = "paPoint4";
             paPoint4.Size = new Size(28, 54);
             paPoint4.TabIndex = 2;
-            paPoint4.Tag = "4";
+            paPoint4.Tag = "9";
             paPoint4.Visible = false;
             // 
             // eletrodoPoint5
@@ -103,7 +103,7 @@
             eletrodoPoint5.Name = "eletrodoPoint5";
             eletrodoPoint5.Size = new Size(12, 12);
             eletrodoPoint5.TabIndex = 3;
-            eletrodoPoint5.Tag = "2";
+            eletrodoPoint5.Tag = "6";
             eletrodoPoint5.Visible = false;
             // 
             // paPoint3
@@ -113,7 +113,7 @@
             paPoint3.Name = "paPoint3";
             paPoint3.Size = new Size(28, 54);
             paPoint3.TabIndex = 4;
-            paPoint3.Tag = "1";
+            paPoint3.Tag = "10";
             paPoint3.Visible = false;
             // 
             // eletrodoPoint4
@@ -123,7 +123,7 @@
             eletrodoPoint4.Name = "eletrodoPoint4";
             eletrodoPoint4.Size = new Size(12, 12);
             eletrodoPoint4.TabIndex = 5;
-            eletrodoPoint4.Tag = "3";
+            eletrodoPoint4.Tag = "5";
             eletrodoPoint4.Visible = false;
             // 
             // label1
@@ -155,12 +155,13 @@
             eletrodo1.BackColor = Color.Transparent;
             eletrodo1.BackgroundImage = Properties.Resources._11;
             eletrodo1.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo1.Location = new Point(51, 781);
+            eletrodo1.Location = new Point(48, 807);
             eletrodo1.Name = "eletrodo1";
-            eletrodo1.Size = new Size(26, 69);
+            eletrodo1.Size = new Size(29, 43);
             eletrodo1.TabIndex = 8;
             eletrodo1.TabStop = false;
             eletrodo1.Tag = "1";
+            eletrodo1.WaitOnLoad = true;
             eletrodo1.MouseDown += eletrodo_MouseDown;
             eletrodo1.MouseMove += eletrodo_MouseMove;
             eletrodo1.MouseUp += eletrodo_MouseUp;
@@ -286,7 +287,7 @@
             paPoint1.Name = "paPoint1";
             paPoint1.Size = new Size(28, 54);
             paPoint1.TabIndex = 1;
-            paPoint1.Tag = "6";
+            paPoint1.Tag = "7";
             paPoint1.Visible = false;
             // 
             // eletrodoPoint3
@@ -296,6 +297,7 @@
             eletrodoPoint3.Name = "eletrodoPoint3";
             eletrodoPoint3.Size = new Size(12, 12);
             eletrodoPoint3.TabIndex = 27;
+            eletrodoPoint3.Tag = "4";
             // 
             // eletrodoPoint1
             // 
@@ -304,7 +306,7 @@
             eletrodoPoint1.Name = "eletrodoPoint1";
             eletrodoPoint1.Size = new Size(12, 12);
             eletrodoPoint1.TabIndex = 6;
-            eletrodoPoint1.Tag = "3";
+            eletrodoPoint1.Tag = "2";
             eletrodoPoint1.Visible = false;
             // 
             // eletrodoPoint2
@@ -314,6 +316,7 @@
             eletrodoPoint2.Name = "eletrodoPoint2";
             eletrodoPoint2.Size = new Size(12, 12);
             eletrodoPoint2.TabIndex = 26;
+            eletrodoPoint2.Tag = "3";
             // 
             // Pa4
             // 
@@ -325,7 +328,7 @@
             Pa4.Size = new Size(18, 34);
             Pa4.TabIndex = 25;
             Pa4.TabStop = false;
-            Pa4.Tag = "6";
+            Pa4.Tag = "10";
             // 
             // Pa3
             // 
@@ -337,7 +340,7 @@
             Pa3.Size = new Size(18, 34);
             Pa3.TabIndex = 24;
             Pa3.TabStop = false;
-            Pa3.Tag = "5";
+            Pa3.Tag = "9";
             // 
             // Pa2
             // 
@@ -349,7 +352,7 @@
             Pa2.Size = new Size(18, 34);
             Pa2.TabIndex = 23;
             Pa2.TabStop = false;
-            Pa2.Tag = "4";
+            Pa2.Tag = "8";
             // 
             // Pa1
             // 
@@ -361,7 +364,7 @@
             Pa1.Size = new Size(18, 34);
             Pa1.TabIndex = 22;
             Pa1.TabStop = false;
-            Pa1.Tag = "3";
+            Pa1.Tag = "7";
             // 
             // UcAlphaGame
             // 

@@ -157,21 +157,27 @@ namespace DesktopECG.UCs
                     panel1.BackgroundImage = Resources._8;
                     eletrodoPoint1.Location = new Point(36, 395);
                     eletrodoPoint1.Size = new Size(12, 12);
+                    eletrodoPoint1.BackgroundImage = Resources._11;
 
                     eletrodoPoint2.Location = new Point(365, 341);
                     eletrodoPoint2.Size = new Size(12, 12);
+                    eletrodoPoint2.BackgroundImage = Resources._11;
 
                     eletrodoPoint3.Location = new Point(376, 324);
                     eletrodoPoint3.Size = new Size(12, 12);
+                    eletrodoPoint3.BackgroundImage = Resources._11;
 
                     eletrodoPoint4.Location = new Point(383, 308);
                     eletrodoPoint4.Size = new Size(12, 12);
+                    eletrodoPoint4.BackgroundImage = Resources._11;
 
                     eletrodoPoint5.Location = new Point(383, 291);
                     eletrodoPoint5.Size = new Size(12, 12);
+                    eletrodoPoint5.BackgroundImage = Resources._11;
 
                     eletrodoPoint6.Location = new Point(378, 274);
                     eletrodoPoint6.Size = new Size(12, 12);
+                    eletrodoPoint6.BackgroundImage = Resources._11;
 
                     Pa1.Location = new Point(880, 3);
                     Pa1.Size = new Size(48, 157);
