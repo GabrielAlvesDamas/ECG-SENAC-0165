@@ -74,7 +74,9 @@
             paPoint2.Size = new Size(28, 54);
             paPoint2.TabIndex = 0;
             paPoint2.Tag = "8";
-            paPoint2.Visible = false;
+            paPoint2.MouseDown += eletrodo_MouseDown;
+            paPoint2.MouseMove += eletrodo_MouseMove;
+            paPoint2.MouseUp += eletrodo_MouseUp;
             // 
             // eletrodoPoint6
             // 
@@ -84,7 +86,6 @@
             eletrodoPoint6.Size = new Size(12, 12);
             eletrodoPoint6.TabIndex = 1;
             eletrodoPoint6.Tag = "1";
-            eletrodoPoint6.Visible = false;
             // 
             // paPoint4
             // 
@@ -95,6 +96,9 @@
             paPoint4.TabIndex = 2;
             paPoint4.Tag = "9";
             paPoint4.Visible = false;
+            paPoint4.MouseDown += eletrodo_MouseDown;
+            paPoint4.MouseMove += eletrodo_MouseMove;
+            paPoint4.MouseUp += eletrodo_MouseUp;
             // 
             // eletrodoPoint5
             // 
@@ -115,6 +119,9 @@
             paPoint3.TabIndex = 4;
             paPoint3.Tag = "10";
             paPoint3.Visible = false;
+            paPoint3.MouseDown += eletrodo_MouseDown;
+            paPoint3.MouseMove += eletrodo_MouseMove;
+            paPoint3.MouseUp += eletrodo_MouseUp;
             // 
             // eletrodoPoint4
             // 
@@ -153,11 +160,11 @@
             // eletrodo1
             // 
             eletrodo1.BackColor = Color.Transparent;
-            eletrodo1.BackgroundImage = Properties.Resources._11;
+            eletrodo1.BackgroundImage = Properties.Resources.eletrodo_8bit;
             eletrodo1.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo1.Location = new Point(48, 807);
+            eletrodo1.Location = new Point(35, 807);
             eletrodo1.Name = "eletrodo1";
-            eletrodo1.Size = new Size(29, 43);
+            eletrodo1.Size = new Size(43, 43);
             eletrodo1.TabIndex = 8;
             eletrodo1.TabStop = false;
             eletrodo1.Tag = "1";
@@ -171,7 +178,7 @@
             eletrodo2.BackColor = Color.Transparent;
             eletrodo2.BackgroundImage = (Image)resources.GetObject("eletrodo2.BackgroundImage");
             eletrodo2.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo2.Location = new Point(101, 823);
+            eletrodo2.Location = new Point(105, 807);
             eletrodo2.Name = "eletrodo2";
             eletrodo2.Size = new Size(12, 27);
             eletrodo2.TabIndex = 9;
@@ -186,7 +193,7 @@
             eletrodo3.BackColor = Color.Transparent;
             eletrodo3.BackgroundImage = (Image)resources.GetObject("eletrodo3.BackgroundImage");
             eletrodo3.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo3.Location = new Point(155, 823);
+            eletrodo3.Location = new Point(175, 807);
             eletrodo3.Name = "eletrodo3";
             eletrodo3.Size = new Size(12, 27);
             eletrodo3.TabIndex = 10;
@@ -201,7 +208,7 @@
             eletrodo4.BackColor = Color.Transparent;
             eletrodo4.BackgroundImage = (Image)resources.GetObject("eletrodo4.BackgroundImage");
             eletrodo4.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo4.Location = new Point(208, 823);
+            eletrodo4.Location = new Point(245, 807);
             eletrodo4.Name = "eletrodo4";
             eletrodo4.Size = new Size(12, 27);
             eletrodo4.TabIndex = 11;
@@ -216,7 +223,7 @@
             eletrodo5.BackColor = Color.Transparent;
             eletrodo5.BackgroundImage = (Image)resources.GetObject("eletrodo5.BackgroundImage");
             eletrodo5.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo5.Location = new Point(259, 823);
+            eletrodo5.Location = new Point(385, 807);
             eletrodo5.Name = "eletrodo5";
             eletrodo5.Size = new Size(12, 27);
             eletrodo5.TabIndex = 12;
@@ -231,7 +238,7 @@
             eletrodo6.BackColor = Color.Transparent;
             eletrodo6.BackgroundImage = (Image)resources.GetObject("eletrodo6.BackgroundImage");
             eletrodo6.BackgroundImageLayout = ImageLayout.Stretch;
-            eletrodo6.Location = new Point(310, 823);
+            eletrodo6.Location = new Point(315, 807);
             eletrodo6.Name = "eletrodo6";
             eletrodo6.Size = new Size(12, 27);
             eletrodo6.TabIndex = 13;
@@ -264,6 +271,7 @@
             // 
             panel1.BackgroundImage = Properties.Resources._8;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(paPoint2);
             panel1.Controls.Add(paPoint1);
             panel1.Controls.Add(eletrodoPoint3);
             panel1.Controls.Add(eletrodoPoint1);
@@ -273,7 +281,6 @@
             panel1.Controls.Add(eletrodoPoint5);
             panel1.Controls.Add(paPoint4);
             panel1.Controls.Add(eletrodoPoint6);
-            panel1.Controls.Add(paPoint2);
             panel1.Controls.Add(paPoint3);
             panel1.Location = new Point(0, -1);
             panel1.Name = "panel1";
@@ -289,6 +296,9 @@
             paPoint1.TabIndex = 1;
             paPoint1.Tag = "7";
             paPoint1.Visible = false;
+            paPoint1.MouseDown += eletrodo_MouseDown;
+            paPoint1.MouseMove += eletrodo_MouseMove;
+            paPoint1.MouseUp += eletrodo_MouseUp;
             // 
             // eletrodoPoint3
             // 
@@ -298,6 +308,7 @@
             eletrodoPoint3.Size = new Size(12, 12);
             eletrodoPoint3.TabIndex = 27;
             eletrodoPoint3.Tag = "4";
+            eletrodoPoint3.Visible = false;
             // 
             // eletrodoPoint1
             // 
@@ -317,6 +328,7 @@
             eletrodoPoint2.Size = new Size(12, 12);
             eletrodoPoint2.TabIndex = 26;
             eletrodoPoint2.Tag = "3";
+            eletrodoPoint2.Visible = false;
             // 
             // Pa4
             // 
@@ -329,6 +341,9 @@
             Pa4.TabIndex = 25;
             Pa4.TabStop = false;
             Pa4.Tag = "10";
+            Pa4.MouseDown += eletrodo_MouseDown;
+            Pa4.MouseMove += eletrodo_MouseMove;
+            Pa4.MouseUp += eletrodo_MouseUp;
             // 
             // Pa3
             // 
@@ -341,6 +356,9 @@
             Pa3.TabIndex = 24;
             Pa3.TabStop = false;
             Pa3.Tag = "9";
+            Pa3.MouseDown += eletrodo_MouseDown;
+            Pa3.MouseMove += eletrodo_MouseMove;
+            Pa3.MouseUp += eletrodo_MouseUp;
             // 
             // Pa2
             // 
@@ -353,6 +371,9 @@
             Pa2.TabIndex = 23;
             Pa2.TabStop = false;
             Pa2.Tag = "8";
+            Pa2.MouseDown += eletrodo_MouseDown;
+            Pa2.MouseMove += eletrodo_MouseMove;
+            Pa2.MouseUp += eletrodo_MouseUp;
             // 
             // Pa1
             // 
@@ -365,6 +386,9 @@
             Pa1.TabIndex = 22;
             Pa1.TabStop = false;
             Pa1.Tag = "7";
+            Pa1.MouseDown += eletrodo_MouseDown;
+            Pa1.MouseMove += eletrodo_MouseMove;
+            Pa1.MouseUp += eletrodo_MouseUp;
             // 
             // UcAlphaGame
             // 

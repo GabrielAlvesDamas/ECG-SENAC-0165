@@ -12,6 +12,7 @@ namespace DesktopECG.UCs
         private IList<EletrodoPoint> ListaPontosDropEletrodo;
         private IList<Point> ListaPosicoesIniciais;
         private int pontuacao;
+        private TipoLayoutEnum.TipoLayout tipoLayoutAtual;
 
         public UcAlphaGame()
         {
@@ -44,7 +45,12 @@ namespace DesktopECG.UCs
                 eletrodo4.Location,
                 eletrodo5.Location,
                 eletrodo6.Location,
+                Pa1.Location,
+                Pa2.Location,
+                Pa3.Location,
+                Pa4.Location,
             };
+            tipoLayoutAtual = TipoLayoutEnum.TipoLayout.PADRAO;
         }
 
         private void eletrodo_MouseDown(object sender, MouseEventArgs e)
@@ -103,7 +109,7 @@ namespace DesktopECG.UCs
         private void buttonVoltar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja realmente sair do jogo?\nTodo o progresso será perdido!", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen(Globals.TIPO_LAYOUT));
+                FrmPrincipal.Instance.LoadScreen(new UcAlphaGameInitialScreen(tipoLayoutAtual));
             return;
 
         }
@@ -111,6 +117,7 @@ namespace DesktopECG.UCs
         private void UcAlphaGame_Load(object sender, EventArgs e)
         {
             HandleChageLayout();
+            tipoLayoutAtual = Globals.TIPO_LAYOUT;
         }
 
         private void HandleChageLayout()
@@ -179,48 +186,48 @@ namespace DesktopECG.UCs
                     eletrodoPoint6.Size = new Size(12, 12);
                     eletrodoPoint6.BackgroundImage = Resources._11;
 
-                    Pa1.Location = new Point(880, 3);
+                    //Pa1.Location = new Point(880, 3);
                     Pa1.Size = new Size(48, 157);
-                    Pa2.Location = new Point(880, 537);
+                    //Pa2.Location = new Point(880, 537);
                     Pa2.Size = new Size(48, 157);
-                    Pa3.Location = new Point(1190, 145);
+                    //Pa3.Location = new Point(1190, 145);
                     Pa3.Size = new Size(48, 157);
-                    Pa4.Location = new Point(1190, 388);
+                    //Pa4.Location = new Point(1190, 388);
                     Pa4.Size = new Size(48, 157);
                     break;
                 case TipoLayoutEnum.TipoLayout.LUDICO:
                     panel1.BackgroundImage = Resources._02___careca_png;
                     eletrodoPoint1.Location = new Point(750, 371);
-                    eletrodoPoint1.Size = new Size(20, 20);
-                    eletrodoPoint1.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo1.Size = new Size(43, 43);
+                    eletrodo1.BackgroundImage = Resources.eletrodo_8bit;
 
                     eletrodoPoint2.Location = new Point(750, 299);
-                    eletrodoPoint2.Size = new Size(20, 20);
-                    eletrodoPoint2.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo2.Size = new Size(43, 43);
+                    eletrodo2.BackgroundImage = Resources.eletrodo_8bit;
 
                     eletrodoPoint3.Location = new Point(778, 273);
-                    eletrodoPoint3.Size = new Size(20, 20);
-                    eletrodoPoint3.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo3.Size = new Size(43, 43);
+                    eletrodo3.BackgroundImage = Resources.eletrodo_8bit;
 
                     eletrodoPoint4.Location = new Point(797, 245);
-                    eletrodoPoint4.Size = new Size(20, 20);
-                    eletrodoPoint4.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo4.Size = new Size(43, 43);
+                    eletrodo4.BackgroundImage = Resources.eletrodo_8bit;
 
                     eletrodoPoint5.Location = new Point(800, 210);
-                    eletrodoPoint5.Size = new Size(20, 20);
-                    eletrodoPoint5.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo5.Size = new Size(43, 43);
+                    eletrodo5.BackgroundImage = Resources.eletrodo_8bit;
 
                     eletrodoPoint6.Location = new Point(785, 184);
-                    eletrodoPoint6.Size = new Size(20, 20);
-                    eletrodoPoint6.BackgroundImage = Resources.eletrodo_8bit;
+                    eletrodo6.Size = new Size(43, 43);
+                    eletrodo6.BackgroundImage = Resources.eletrodo_8bit;
 
-                    Pa1.Location = new Point(880, 3);
+                    paPoint1.Location = new Point(880, 3);
                     Pa1.Size = new Size(26, 27);
-                    Pa2.Location = new Point(880, 537);
+                    paPoint2.Location = new Point(880, 537);
                     Pa2.Size = new Size(26, 27);
-                    Pa3.Location = new Point(1190, 145);
+                    paPoint3.Location = new Point(1190, 145);
                     Pa3.Size = new Size(26, 27);
-                    Pa4.Location = new Point(1190, 388);
+                    paPoint4.Location = new Point(1190, 388);
                     Pa4.Size = new Size(26, 27);
                     break;
 
