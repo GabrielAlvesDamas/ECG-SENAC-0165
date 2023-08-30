@@ -26,14 +26,17 @@ namespace DesktopECG.UCs
                 {
                     Panel panel = (control as Panel);
                     panel.BackColor = Color.Transparent;
-                    ListaPontosDropEletrodo.Add(new EletrodoPoint()
+                    if (panel.Tag != null)
                     {
-                        PosicaoMaximaX = panel.Location.X + panel.Size.Width,
-                        PosicaoMinimaX = panel.Location.X,
-                        PosicaoMaximaY = panel.Location.Y + panel.Size.Height,
-                        PosicaoMinimaY = panel.Location.Y,
-                        Tag = panel.Tag.ToString()
-                    });
+                        ListaPontosDropEletrodo.Add(new EletrodoPoint()
+                        {
+                            PosicaoMaximaX = panel.Location.X + panel.Size.Width,
+                            PosicaoMinimaX = panel.Location.X,
+                            PosicaoMaximaY = panel.Location.Y + panel.Size.Height,
+                            PosicaoMinimaY = panel.Location.Y,
+                            Tag = panel.Tag.ToString()
+                        });
+                    }
                 }
             }
 
@@ -127,111 +130,166 @@ namespace DesktopECG.UCs
 
                 case TipoLayoutEnum.TipoLayout.PADRAO:
                     panel1.BackgroundImage = Resources.Personagem1;
-                    eletrodoPoint1.Location = new Point(560, 382);
-                    eletrodoPoint1.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    eletrodoPoint2.Location = new Point(560, 364);
-                    eletrodoPoint2.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
+                    eletrodoPoint1.Location = new Point(563, 365);
+                    eletrodoPoint1.Size = new Size(10, 10);
+                    eletrodo1.Size = new Size(15, 15);
+                    eletrodo1.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    eletrodoPoint3.Location = new Point(574, 356);
-                    eletrodoPoint3.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
+                    eletrodoPoint2.Location = new Point(578, 354);
+                    eletrodoPoint2.Size = new Size(10, 10);
+                    eletrodo2.Size = new Size(15, 15);
+                    eletrodo2.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    eletrodoPoint4.Location = new Point(580, 343);
-                    eletrodoPoint4.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
+                    eletrodoPoint3.Location = new Point(580, 338);
+                    eletrodoPoint3.Size = new Size(10, 10);
+                    eletrodo3.Size = new Size(15, 15);
+                    eletrodo3.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    eletrodoPoint5.Location = new Point(581, 330);
-                    eletrodoPoint5.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
+                    eletrodoPoint4.Location = new Point(574, 323);
+                    eletrodoPoint4.Size = new Size(10, 10);
+                    eletrodo4.Size = new Size(15, 15);
+                    eletrodo4.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    eletrodoPoint6.Location = new Point(580, 318);
-                    eletrodoPoint6.Size = new Size(26, 27);
-                    eletrodoPoint1.BackgroundImage = Resources.thumbnail_Eletrodo;
+                    eletrodoPoint5.Location = new Point(559, 317);
+                    eletrodoPoint5.Size = new Size(10, 10);
+                    eletrodo5.Size = new Size(15, 15);
+                    eletrodo5.BackgroundImage = Resources.thumbnail_Eletrodo;
 
-                    Pa1.Location = new Point(680, 456);
-                    Pa1.Size = new Size(26, 27);
-                    Pa2.Location = new Point(680, 272);
-                    Pa2.Size = new Size(26, 27);
-                    Pa3.Location = new Point(953, 394);
-                    Pa3.Size = new Size(26, 27);
-                    Pa4.Location = new Point(953, 333);
-                    Pa4.Size = new Size(26, 27);
+                    eletrodoPoint6.Location = new Point(563, 381);
+                    eletrodoPoint6.Size = new Size(10, 10);
+                    eletrodo6.Size = new Size(15, 15);
+                    eletrodo6.BackgroundImage = Resources.thumbnail_Eletrodo;
+
+                    paPoint1.Location = new Point(677, 275);
+                    paPoint1.Size = new Size(15, 20);
+                    Pa1.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._2;
+
+                    paPoint2.Location = new Point(677, 457);
+                    paPoint2.Size = new Size(15, 20);
+                    Pa2.Size = new Size(69, 87);
+                    Pa2.BackgroundImage = Resources._3;
+
+                    paPoint3.Location = new Point(947, 337);
+                    paPoint3.Size = new Size(15, 20);
+                    Pa3.Size = new Size(69, 87);
+                    Pa3.BackgroundImage = Resources._4;
+
+                    paPoint4.Location = new Point(947, 395);
+                    paPoint4.Size = new Size(15, 20);
+                    Pa4.Size = new Size(69, 87);
+                    Pa4.BackgroundImage = Resources._5;
                     break;
                 case TipoLayoutEnum.TipoLayout.REALISTA:
                     panel1.BackgroundImage = Resources._8;
-                    eletrodoPoint1.Location = new Point(36, 395);
+
+                    eletrodoPoint1.Location = new Point(365, 341);
                     eletrodoPoint1.Size = new Size(12, 12);
-                    eletrodoPoint1.BackgroundImage = Resources._11;
+                    eletrodo1.Size = new Size(30, 35);
+                    eletrodo1.BackgroundImage = Resources._11;
 
-                    eletrodoPoint2.Location = new Point(365, 341);
+                    eletrodoPoint2.Location = new Point(376, 324);
                     eletrodoPoint2.Size = new Size(12, 12);
-                    eletrodoPoint2.BackgroundImage = Resources._11;
+                    eletrodo2.Size = new Size(30, 35);
+                    eletrodo2.BackgroundImage = Resources._11;
 
-                    eletrodoPoint3.Location = new Point(376, 324);
+                    eletrodoPoint3.Location = new Point(383, 308);
                     eletrodoPoint3.Size = new Size(12, 12);
-                    eletrodoPoint3.BackgroundImage = Resources._11;
+                    eletrodo3.Size = new Size(30, 35);
+                    eletrodo3.BackgroundImage = Resources._11;
 
-                    eletrodoPoint4.Location = new Point(383, 308);
+                    eletrodoPoint4.Location = new Point(383, 291);
                     eletrodoPoint4.Size = new Size(12, 12);
-                    eletrodoPoint4.BackgroundImage = Resources._11;
+                    eletrodo4.Size = new Size(30, 35);
+                    eletrodo4.BackgroundImage = Resources._11;
 
-                    eletrodoPoint5.Location = new Point(383, 291);
+                    eletrodoPoint5.Location = new Point(378, 274);
                     eletrodoPoint5.Size = new Size(12, 12);
-                    eletrodoPoint5.BackgroundImage = Resources._11;
+                    eletrodo5.Size = new Size(30, 35);
+                    eletrodo5.BackgroundImage = Resources._11;
 
-                    eletrodoPoint6.Location = new Point(378, 274);
+                    eletrodoPoint6.Location = new Point(365, 395);
                     eletrodoPoint6.Size = new Size(12, 12);
-                    eletrodoPoint6.BackgroundImage = Resources._11;
+                    eletrodo6.Size = new Size(30, 35);
+                    eletrodo6.BackgroundImage = Resources._11;
 
-                    //Pa1.Location = new Point(880, 3);
-                    Pa1.Size = new Size(48, 157);
-                    //Pa2.Location = new Point(880, 537);
-                    Pa2.Size = new Size(48, 157);
-                    //Pa3.Location = new Point(1190, 145);
-                    Pa3.Size = new Size(48, 157);
-                    //Pa4.Location = new Point(1190, 388);
-                    Pa4.Size = new Size(48, 157);
+                    paPoint1.Location = new Point(633, 169);
+                    paPoint1.Size = new Size(28, 54);
+                    Pa1.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._2;
+
+                    paPoint2.Location = new Point(633, 527);
+                    paPoint2.Size = new Size(28, 54);
+                    Pa2.Size = new Size(69, 87);
+                    Pa2.BackgroundImage = Resources._3;
+
+                    paPoint3.Location = new Point(1258, 308);
+                    paPoint3.Size = new Size(28, 54);
+                    Pa3.Size = new Size(69, 87);
+                    Pa3.BackgroundImage = Resources._4;
+
+                    paPoint4.Location = new Point(1258, 388);
+                    paPoint4.Size = new Size(28, 54);
+                    Pa4.Size = new Size(69, 87);
+                    Pa4.BackgroundImage = Resources._5;
                     break;
                 case TipoLayoutEnum.TipoLayout.LUDICO:
                     panel1.BackgroundImage = Resources._02___careca_png;
-                    eletrodoPoint1.Location = new Point(750, 371);
+
+                    eletrodoPoint1.Location = new Point(761, 167);
+                    eletrodoPoint1.Size = new Size(25, 25);
                     eletrodo1.Size = new Size(43, 43);
                     eletrodo1.BackgroundImage = Resources.eletrodo_8bit;
 
-                    eletrodoPoint2.Location = new Point(750, 299);
+                    eletrodoPoint2.Location = new Point(773, 197);
+                    eletrodoPoint2.Size = new Size(25, 25);
                     eletrodo2.Size = new Size(43, 43);
                     eletrodo2.BackgroundImage = Resources.eletrodo_8bit;
 
-                    eletrodoPoint3.Location = new Point(778, 273);
+                    eletrodoPoint3.Location = new Point(778, 229);
+                    eletrodoPoint3.Size = new Size(25, 25);
                     eletrodo3.Size = new Size(43, 43);
                     eletrodo3.BackgroundImage = Resources.eletrodo_8bit;
 
-                    eletrodoPoint4.Location = new Point(797, 245);
+                    eletrodoPoint4.Location = new Point(778, 260);
+                    eletrodoPoint4.Size = new Size(25, 25);
                     eletrodo4.Size = new Size(43, 43);
                     eletrodo4.BackgroundImage = Resources.eletrodo_8bit;
 
-                    eletrodoPoint5.Location = new Point(800, 210);
+                    eletrodoPoint5.Location = new Point(761, 291);
+                    eletrodoPoint5.Size = new Size(25, 25);
                     eletrodo5.Size = new Size(43, 43);
                     eletrodo5.BackgroundImage = Resources.eletrodo_8bit;
 
-                    eletrodoPoint6.Location = new Point(785, 184);
+                    eletrodoPoint6.Location = new Point(761, 364);
+                    eletrodoPoint6.Size = new Size(25, 25);
                     eletrodo6.Size = new Size(43, 43);
                     eletrodo6.BackgroundImage = Resources.eletrodo_8bit;
 
-                    paPoint1.Location = new Point(880, 3);
-                    Pa1.Size = new Size(26, 27);
-                    paPoint2.Location = new Point(880, 537);
-                    Pa2.Size = new Size(26, 27);
-                    paPoint3.Location = new Point(1190, 145);
-                    Pa3.Size = new Size(26, 27);
-                    paPoint4.Location = new Point(1190, 388);
-                    Pa4.Size = new Size(26, 27);
+                    paPoint1.Location = new Point(845, 5);
+                    paPoint1.Size = new Size(84, 169);
+                    Pa1.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._2;
+
+                    paPoint2.Location = new Point(845, 530);
+                    paPoint2.Size = new Size(84, 169);
+                    Pa2.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._3;
+
+                    paPoint3.Location = new Point(1155, 144);
+                    paPoint3.Size = new Size(84, 169);
+                    Pa3.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._4;
+
+                    paPoint4.Location = new Point(1155, 381);
+                    paPoint4.Size = new Size(84, 169);
+                    Pa4.Size = new Size(69, 87);
+                    Pa1.BackgroundImage = Resources._5;
                     break;
 
             }
         }
+
     }
 }

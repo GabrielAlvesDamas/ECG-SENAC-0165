@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\804560\\.nuget\\packages\\": {},
+    "C:\\Users\\notebook\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\804560\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\DesktopECG.csproj",
+      "projectUniqueName": "C:\\Users\\notebook\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\DesktopECG.csproj",
       "projectName": "DesktopECG",
-      "projectPath": "C:\\Users\\804560\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\DesktopECG.csproj",
-      "packagesPath": "C:\\Users\\804560\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\804560\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\obj\\",
+      "projectPath": "C:\\Users\\notebook\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\DesktopECG.csproj",
+      "packagesPath": "C:\\Users\\notebook\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\notebook\\Desktop\\ECG-SENAC-0165\\ECG-SENAC-0165-LIBERACAO\\Desenvolvimento\\DesktopECG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\804560\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

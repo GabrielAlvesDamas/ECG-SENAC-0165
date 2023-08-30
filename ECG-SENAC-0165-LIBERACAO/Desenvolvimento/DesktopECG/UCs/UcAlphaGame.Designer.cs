@@ -68,12 +68,14 @@
             // 
             // paPoint2
             // 
-            paPoint2.BackColor = Color.WhiteSmoke;
-            paPoint2.Location = new Point(633, 527);
+            paPoint2.BackColor = Color.Red;
+            paPoint2.ForeColor = Color.DarkGoldenrod;
+            paPoint2.Location = new Point(677, 457);
             paPoint2.Name = "paPoint2";
-            paPoint2.Size = new Size(28, 54);
+            paPoint2.Size = new Size(15, 20);
             paPoint2.TabIndex = 0;
             paPoint2.Tag = "8";
+            paPoint2.Visible = false;
             paPoint2.MouseDown += eletrodo_MouseDown;
             paPoint2.MouseMove += eletrodo_MouseMove;
             paPoint2.MouseUp += eletrodo_MouseUp;
@@ -81,18 +83,18 @@
             // eletrodoPoint6
             // 
             eletrodoPoint6.BackColor = Color.WhiteSmoke;
-            eletrodoPoint6.Location = new Point(365, 395);
+            eletrodoPoint6.Location = new Point(563, 381);
             eletrodoPoint6.Name = "eletrodoPoint6";
-            eletrodoPoint6.Size = new Size(12, 12);
+            eletrodoPoint6.Size = new Size(10, 10);
             eletrodoPoint6.TabIndex = 1;
             eletrodoPoint6.Tag = "1";
             // 
             // paPoint4
             // 
             paPoint4.BackColor = Color.WhiteSmoke;
-            paPoint4.Location = new Point(1258, 388);
+            paPoint4.Location = new Point(947, 395);
             paPoint4.Name = "paPoint4";
-            paPoint4.Size = new Size(28, 54);
+            paPoint4.Size = new Size(15, 20);
             paPoint4.TabIndex = 2;
             paPoint4.Tag = "9";
             paPoint4.Visible = false;
@@ -103,9 +105,9 @@
             // eletrodoPoint5
             // 
             eletrodoPoint5.BackColor = Color.WhiteSmoke;
-            eletrodoPoint5.Location = new Point(378, 274);
+            eletrodoPoint5.Location = new Point(559, 317);
             eletrodoPoint5.Name = "eletrodoPoint5";
-            eletrodoPoint5.Size = new Size(12, 12);
+            eletrodoPoint5.Size = new Size(10, 10);
             eletrodoPoint5.TabIndex = 3;
             eletrodoPoint5.Tag = "6";
             eletrodoPoint5.Visible = false;
@@ -113,9 +115,9 @@
             // paPoint3
             // 
             paPoint3.BackColor = Color.WhiteSmoke;
-            paPoint3.Location = new Point(1258, 308);
+            paPoint3.Location = new Point(947, 337);
             paPoint3.Name = "paPoint3";
-            paPoint3.Size = new Size(28, 54);
+            paPoint3.Size = new Size(15, 20);
             paPoint3.TabIndex = 4;
             paPoint3.Tag = "10";
             paPoint3.Visible = false;
@@ -126,9 +128,9 @@
             // eletrodoPoint4
             // 
             eletrodoPoint4.BackColor = Color.WhiteSmoke;
-            eletrodoPoint4.Location = new Point(383, 291);
+            eletrodoPoint4.Location = new Point(574, 323);
             eletrodoPoint4.Name = "eletrodoPoint4";
-            eletrodoPoint4.Size = new Size(12, 12);
+            eletrodoPoint4.Size = new Size(10, 10);
             eletrodoPoint4.TabIndex = 5;
             eletrodoPoint4.Tag = "5";
             eletrodoPoint4.Visible = false;
@@ -176,11 +178,11 @@
             // eletrodo2
             // 
             eletrodo2.BackColor = Color.Transparent;
-            eletrodo2.BackgroundImage = (Image)resources.GetObject("eletrodo2.BackgroundImage");
+            eletrodo2.BackgroundImage = Properties.Resources._11;
             eletrodo2.BackgroundImageLayout = ImageLayout.Stretch;
             eletrodo2.Location = new Point(105, 807);
             eletrodo2.Name = "eletrodo2";
-            eletrodo2.Size = new Size(12, 27);
+            eletrodo2.Size = new Size(30, 35);
             eletrodo2.TabIndex = 9;
             eletrodo2.TabStop = false;
             eletrodo2.Tag = "2";
@@ -191,11 +193,11 @@
             // eletrodo3
             // 
             eletrodo3.BackColor = Color.Transparent;
-            eletrodo3.BackgroundImage = (Image)resources.GetObject("eletrodo3.BackgroundImage");
+            eletrodo3.BackgroundImage = Properties.Resources.thumbnail_Eletrodo;
             eletrodo3.BackgroundImageLayout = ImageLayout.Stretch;
             eletrodo3.Location = new Point(175, 807);
             eletrodo3.Name = "eletrodo3";
-            eletrodo3.Size = new Size(12, 27);
+            eletrodo3.Size = new Size(15, 15);
             eletrodo3.TabIndex = 10;
             eletrodo3.TabStop = false;
             eletrodo3.Tag = "3";
@@ -269,7 +271,7 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources._8;
+            panel1.BackgroundImage = Properties.Resources.Personagem1;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(paPoint2);
             panel1.Controls.Add(paPoint1);
@@ -290,9 +292,9 @@
             // paPoint1
             // 
             paPoint1.BackColor = Color.WhiteSmoke;
-            paPoint1.Location = new Point(633, 169);
+            paPoint1.Location = new Point(677, 275);
             paPoint1.Name = "paPoint1";
-            paPoint1.Size = new Size(28, 54);
+            paPoint1.Size = new Size(15, 20);
             paPoint1.TabIndex = 1;
             paPoint1.Tag = "7";
             paPoint1.Visible = false;
@@ -303,9 +305,9 @@
             // eletrodoPoint3
             // 
             eletrodoPoint3.BackColor = Color.WhiteSmoke;
-            eletrodoPoint3.Location = new Point(383, 308);
+            eletrodoPoint3.Location = new Point(580, 338);
             eletrodoPoint3.Name = "eletrodoPoint3";
-            eletrodoPoint3.Size = new Size(12, 12);
+            eletrodoPoint3.Size = new Size(10, 10);
             eletrodoPoint3.TabIndex = 27;
             eletrodoPoint3.Tag = "4";
             eletrodoPoint3.Visible = false;
@@ -313,9 +315,9 @@
             // eletrodoPoint1
             // 
             eletrodoPoint1.BackColor = Color.WhiteSmoke;
-            eletrodoPoint1.Location = new Point(365, 341);
+            eletrodoPoint1.Location = new Point(563, 365);
             eletrodoPoint1.Name = "eletrodoPoint1";
-            eletrodoPoint1.Size = new Size(12, 12);
+            eletrodoPoint1.Size = new Size(10, 10);
             eletrodoPoint1.TabIndex = 6;
             eletrodoPoint1.Tag = "2";
             eletrodoPoint1.Visible = false;
@@ -323,9 +325,9 @@
             // eletrodoPoint2
             // 
             eletrodoPoint2.BackColor = Color.WhiteSmoke;
-            eletrodoPoint2.Location = new Point(376, 324);
+            eletrodoPoint2.Location = new Point(578, 354);
             eletrodoPoint2.Name = "eletrodoPoint2";
-            eletrodoPoint2.Size = new Size(12, 12);
+            eletrodoPoint2.Size = new Size(10, 10);
             eletrodoPoint2.TabIndex = 26;
             eletrodoPoint2.Tag = "3";
             eletrodoPoint2.Visible = false;
@@ -333,11 +335,11 @@
             // Pa4
             // 
             Pa4.BackColor = Color.Transparent;
-            Pa4.BackgroundImage = (Image)resources.GetObject("Pa4.BackgroundImage");
+            Pa4.BackgroundImage = Properties.Resources._5;
             Pa4.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa4.Location = new Point(762, 816);
+            Pa4.Location = new Point(797, 763);
             Pa4.Name = "Pa4";
-            Pa4.Size = new Size(18, 34);
+            Pa4.Size = new Size(69, 87);
             Pa4.TabIndex = 25;
             Pa4.TabStop = false;
             Pa4.Tag = "10";
@@ -348,11 +350,11 @@
             // Pa3
             // 
             Pa3.BackColor = Color.Transparent;
-            Pa3.BackgroundImage = (Image)resources.GetObject("Pa3.BackgroundImage");
+            Pa3.BackgroundImage = Properties.Resources._4;
             Pa3.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa3.Location = new Point(711, 816);
+            Pa3.Location = new Point(722, 763);
             Pa3.Name = "Pa3";
-            Pa3.Size = new Size(18, 34);
+            Pa3.Size = new Size(69, 87);
             Pa3.TabIndex = 24;
             Pa3.TabStop = false;
             Pa3.Tag = "9";
@@ -363,11 +365,11 @@
             // Pa2
             // 
             Pa2.BackColor = Color.Transparent;
-            Pa2.BackgroundImage = (Image)resources.GetObject("Pa2.BackgroundImage");
+            Pa2.BackgroundImage = Properties.Resources._3;
             Pa2.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa2.Location = new Point(660, 816);
+            Pa2.Location = new Point(647, 763);
             Pa2.Name = "Pa2";
-            Pa2.Size = new Size(18, 34);
+            Pa2.Size = new Size(69, 87);
             Pa2.TabIndex = 23;
             Pa2.TabStop = false;
             Pa2.Tag = "8";
@@ -378,11 +380,11 @@
             // Pa1
             // 
             Pa1.BackColor = Color.Transparent;
-            Pa1.BackgroundImage = (Image)resources.GetObject("Pa1.BackgroundImage");
+            Pa1.BackgroundImage = Properties.Resources._2;
             Pa1.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa1.Location = new Point(607, 816);
+            Pa1.Location = new Point(572, 763);
             Pa1.Name = "Pa1";
-            Pa1.Size = new Size(18, 34);
+            Pa1.Size = new Size(69, 87);
             Pa1.TabIndex = 22;
             Pa1.TabStop = false;
             Pa1.Tag = "7";
