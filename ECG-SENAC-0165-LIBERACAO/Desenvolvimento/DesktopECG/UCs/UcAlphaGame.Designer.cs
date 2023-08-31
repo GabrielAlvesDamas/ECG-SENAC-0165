@@ -68,7 +68,6 @@
             // 
             // paPoint2
             // 
-            paPoint2.BackColor = Color.Red;
             paPoint2.ForeColor = Color.DarkGoldenrod;
             paPoint2.Location = new Point(677, 457);
             paPoint2.Name = "paPoint2";
@@ -91,7 +90,6 @@
             // 
             // paPoint4
             // 
-            paPoint4.BackColor = Color.WhiteSmoke;
             paPoint4.Location = new Point(947, 395);
             paPoint4.Name = "paPoint4";
             paPoint4.Size = new Size(15, 20);
@@ -114,7 +112,6 @@
             // 
             // paPoint3
             // 
-            paPoint3.BackColor = Color.WhiteSmoke;
             paPoint3.Location = new Point(947, 337);
             paPoint3.Name = "paPoint3";
             paPoint3.Size = new Size(15, 20);
@@ -291,7 +288,6 @@
             // 
             // paPoint1
             // 
-            paPoint1.BackColor = Color.WhiteSmoke;
             paPoint1.Location = new Point(677, 275);
             paPoint1.Name = "paPoint1";
             paPoint1.Size = new Size(15, 20);

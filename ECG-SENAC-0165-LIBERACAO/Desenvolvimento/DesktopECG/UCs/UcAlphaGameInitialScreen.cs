@@ -76,6 +76,40 @@ namespace DesktopECG.UCs
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void buttonAplicarEstilo_Click(object sender, EventArgs e)
+        {
             Globals.TIPO_LAYOUT = (TipoLayoutEnum.TipoLayout)comboBox1.SelectedIndex;
             HandleChageLayout();
         }

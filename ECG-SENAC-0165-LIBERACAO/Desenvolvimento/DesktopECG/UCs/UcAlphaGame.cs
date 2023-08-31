@@ -19,6 +19,26 @@ namespace DesktopECG.UCs
             InitializeComponent();
             pontuacao = 0;
             label2.Text = pontuacao.ToString();
+            CriaPontosEletrodo();
+
+            ListaPosicoesIniciais = new List<Point>()
+            {
+                eletrodo1.Location,
+                eletrodo2.Location,
+                eletrodo3.Location,
+                eletrodo4.Location,
+                eletrodo5.Location,
+                eletrodo6.Location,
+                Pa1.Location,
+                Pa2.Location,
+                Pa3.Location,
+                Pa4.Location,
+            };
+            tipoLayoutAtual = TipoLayoutEnum.TipoLayout.PADRAO;
+        }
+
+        private void CriaPontosEletrodo()
+        {
             ListaPontosDropEletrodo = new List<EletrodoPoint>();
             foreach (var control in panel1.Controls)
             {
@@ -39,21 +59,6 @@ namespace DesktopECG.UCs
                     }
                 }
             }
-
-            ListaPosicoesIniciais = new List<Point>()
-            {
-                eletrodo1.Location,
-                eletrodo2.Location,
-                eletrodo3.Location,
-                eletrodo4.Location,
-                eletrodo5.Location,
-                eletrodo6.Location,
-                Pa1.Location,
-                Pa2.Location,
-                Pa3.Location,
-                Pa4.Location,
-            };
-            tipoLayoutAtual = TipoLayoutEnum.TipoLayout.PADRAO;
         }
 
         private void eletrodo_MouseDown(object sender, MouseEventArgs e)
@@ -180,6 +185,8 @@ namespace DesktopECG.UCs
                     paPoint4.Size = new Size(15, 20);
                     Pa4.Size = new Size(69, 87);
                     Pa4.BackgroundImage = Resources._5;
+
+                    CriaPontosEletrodo();
                     break;
                 case TipoLayoutEnum.TipoLayout.REALISTA:
                     panel1.BackgroundImage = Resources._8;
@@ -233,6 +240,7 @@ namespace DesktopECG.UCs
                     paPoint4.Size = new Size(28, 54);
                     Pa4.Size = new Size(69, 87);
                     Pa4.BackgroundImage = Resources._5;
+                    CriaPontosEletrodo();
                     break;
                 case TipoLayoutEnum.TipoLayout.LUDICO:
                     panel1.BackgroundImage = Resources._02___careca_png;
@@ -286,6 +294,7 @@ namespace DesktopECG.UCs
                     paPoint4.Size = new Size(84, 169);
                     Pa4.Size = new Size(69, 87);
                     Pa1.BackgroundImage = Resources._5;
+                    CriaPontosEletrodo();
                     break;
 
             }
