@@ -268,7 +268,7 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = Properties.Resources.Personagem1;
+            panel1.BackgroundImage = Properties.Resources._8;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.Controls.Add(paPoint2);
             panel1.Controls.Add(paPoint1);
@@ -331,11 +331,11 @@
             // Pa4
             // 
             Pa4.BackColor = Color.Transparent;
-            Pa4.BackgroundImage = Properties.Resources._5;
+            Pa4.BackgroundImage = Properties.Resources._1_removebg_preview__2_;
             Pa4.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa4.Location = new Point(797, 763);
+            Pa4.Location = new Point(797, 744);
             Pa4.Name = "Pa4";
-            Pa4.Size = new Size(69, 87);
+            Pa4.Size = new Size(69, 123);
             Pa4.TabIndex = 25;
             Pa4.TabStop = false;
             Pa4.Tag = "10";
@@ -346,11 +346,11 @@
             // Pa3
             // 
             Pa3.BackColor = Color.Transparent;
-            Pa3.BackgroundImage = Properties.Resources._4;
+            Pa3.BackgroundImage = Properties.Resources._4_removebg_preview;
             Pa3.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa3.Location = new Point(722, 763);
+            Pa3.Location = new Point(722, 744);
             Pa3.Name = "Pa3";
-            Pa3.Size = new Size(69, 87);
+            Pa3.Size = new Size(69, 123);
             Pa3.TabIndex = 24;
             Pa3.TabStop = false;
             Pa3.Tag = "9";
@@ -361,11 +361,11 @@
             // Pa2
             // 
             Pa2.BackColor = Color.Transparent;
-            Pa2.BackgroundImage = Properties.Resources._3;
+            Pa2.BackgroundImage = Properties.Resources._3_removebg_preview;
             Pa2.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa2.Location = new Point(647, 763);
+            Pa2.Location = new Point(647, 744);
             Pa2.Name = "Pa2";
-            Pa2.Size = new Size(69, 87);
+            Pa2.Size = new Size(45, 78);
             Pa2.TabIndex = 23;
             Pa2.TabStop = false;
             Pa2.Tag = "8";
@@ -376,14 +376,15 @@
             // Pa1
             // 
             Pa1.BackColor = Color.Transparent;
-            Pa1.BackgroundImage = Properties.Resources._2;
+            Pa1.BackgroundImage = Properties.Resources._2_removebg_preview1;
             Pa1.BackgroundImageLayout = ImageLayout.Stretch;
-            Pa1.Location = new Point(572, 763);
+            Pa1.Location = new Point(572, 744);
             Pa1.Name = "Pa1";
-            Pa1.Size = new Size(69, 87);
+            Pa1.Size = new Size(31, 45);
             Pa1.TabIndex = 22;
             Pa1.TabStop = false;
             Pa1.Tag = "7";
+            Pa1.Click += Pa1_Click;
             Pa1.MouseDown += eletrodo_MouseDown;
             Pa1.MouseMove += eletrodo_MouseMove;
             Pa1.MouseUp += eletrodo_MouseUp;

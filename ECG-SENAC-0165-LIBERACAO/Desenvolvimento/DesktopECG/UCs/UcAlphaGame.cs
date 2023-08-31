@@ -90,7 +90,7 @@ namespace DesktopECG.UCs
                 if (Eletrodo != null)
                 {
                     pic.Location = new Point() { X = Eletrodo.PosicaoMinimaX.Value + 10, Y = Eletrodo.PosicaoMinimaY.Value + 10 };
-                    if (pontuacao <= 600)
+                    if (pontuacao <= 900)
                         pontuacao += 100;
                     label2.Text = pontuacao.ToString();
                 }
@@ -168,24 +168,19 @@ namespace DesktopECG.UCs
 
                     paPoint1.Location = new Point(677, 275);
                     paPoint1.Size = new Size(15, 20);
-                    Pa1.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._2;
+                    Pa1.Size = new Size(31, 45);
 
                     paPoint2.Location = new Point(677, 457);
                     paPoint2.Size = new Size(15, 20);
-                    Pa2.Size = new Size(69, 87);
-                    Pa2.BackgroundImage = Resources._3;
+                    Pa2.Size = new Size(31, 45);
 
                     paPoint3.Location = new Point(947, 337);
                     paPoint3.Size = new Size(15, 20);
-                    Pa3.Size = new Size(69, 87);
-                    Pa3.BackgroundImage = Resources._4;
+                    Pa3.Size = new Size(31, 45);
 
                     paPoint4.Location = new Point(947, 395);
                     paPoint4.Size = new Size(15, 20);
-                    Pa4.Size = new Size(69, 87);
-                    Pa4.BackgroundImage = Resources._5;
-
+                    Pa4.Size = new Size(31, 45);
                     CriaPontosEletrodo();
                     break;
                 case TipoLayoutEnum.TipoLayout.REALISTA:
@@ -222,24 +217,20 @@ namespace DesktopECG.UCs
                     eletrodo6.BackgroundImage = Resources._11;
 
                     paPoint1.Location = new Point(633, 169);
-                    paPoint1.Size = new Size(28, 54);
+                    paPoint1.Size = new Size(45, 78);
                     Pa1.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._2;
 
                     paPoint2.Location = new Point(633, 527);
-                    paPoint2.Size = new Size(28, 54);
+                    paPoint2.Size = new Size(45, 78);
                     Pa2.Size = new Size(69, 87);
-                    Pa2.BackgroundImage = Resources._3;
 
                     paPoint3.Location = new Point(1258, 308);
-                    paPoint3.Size = new Size(28, 54);
+                    paPoint3.Size = new Size(45, 78);
                     Pa3.Size = new Size(69, 87);
-                    Pa3.BackgroundImage = Resources._4;
 
                     paPoint4.Location = new Point(1258, 388);
-                    paPoint4.Size = new Size(28, 54);
+                    paPoint4.Size = new Size(45, 78);
                     Pa4.Size = new Size(69, 87);
-                    Pa4.BackgroundImage = Resources._5;
                     CriaPontosEletrodo();
                     break;
                 case TipoLayoutEnum.TipoLayout.LUDICO:
@@ -277,28 +268,28 @@ namespace DesktopECG.UCs
 
                     paPoint1.Location = new Point(845, 5);
                     paPoint1.Size = new Size(84, 169);
-                    Pa1.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._2;
+                    Pa1.Size = new Size(69, 123);
 
                     paPoint2.Location = new Point(845, 530);
                     paPoint2.Size = new Size(84, 169);
-                    Pa2.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._3;
+                    Pa2.Size = new Size(69, 123);
 
                     paPoint3.Location = new Point(1155, 144);
                     paPoint3.Size = new Size(84, 169);
-                    Pa3.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._4;
+                    Pa3.Size = new Size(69, 123);
 
                     paPoint4.Location = new Point(1155, 381);
                     paPoint4.Size = new Size(84, 169);
-                    Pa4.Size = new Size(69, 87);
-                    Pa1.BackgroundImage = Resources._5;
+                    Pa4.Size = new Size(69, 123);
                     CriaPontosEletrodo();
                     break;
 
             }
         }
 
+        private void Pa1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
